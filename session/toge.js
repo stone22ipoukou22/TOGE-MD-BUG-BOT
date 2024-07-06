@@ -1,3 +1,3 @@
 {
-	"name": "tog Bot Multi Device "
+	"name": "toge Bot Multi Device "
 }
