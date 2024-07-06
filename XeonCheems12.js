@@ -126,12 +126,12 @@ const ZipXeon = JSON.parse(fs.readFileSync('./TOGEMedia/database/zip.json'))
 const ApkXeon = JSON.parse(fs.readFileSync('./TOGEMedia/database/apk.json'))
 
 //bug database
-const { xeontext1 } = require('./src/data/function/XBug/togetext1')
-const { xeontext2 } = require('./src/data/function/XBug/togetext2')
-const { xeontext3 } = require('./src/data/function/XBug/togetext3')
-const { xeontext4 } = require('./src/data/function/XBug/togetext4')
-const { xeontext5 } = require('./src/data/function/XBug/togetext5')
-const { xeontext6 } = require('./src/data/function/XBug/togetext6')
+const { xeontext1 } = require('./src/data/function/XBug/xeontext1')
+const { xeontext2 } = require('./src/data/function/XBug/xeontext2')
+const { xeontext3 } = require('./src/data/function/XBug/xeontext3')
+const { xeontext4 } = require('./src/data/function/XBug/xeontext4')
+const { xeontext5 } = require('./src/data/function/XBug/xeontext5')
+const { xeontext6 } = require('./src/data/function/XBug/xeontext6')
 const wkwk = fs.readFileSync(`./src/data/function/XBug/x.mp3`)
 const xsteek = fs.readFileSync(`./src/data/function/XBug/x.webp`)
 
@@ -338,8 +338,8 @@ async function XeonyCrashy(dgxeon,chat) {
 XeonBotInc.sendMessage(chat, {
 document: {url: './settings.js'},
 mimetype: `image/null`,
-fileName: `${toge}.${togetext1}` ,
-caption: `${toge + togrtext1}`,
+fileName: `${dgexon}.${xeontext1}` ,
+caption: `${dgxeon + xeontext1}`,
 }, {quoted: subscribe_toge012345 })
 }
 //end bug functions
