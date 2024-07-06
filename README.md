@@ -1,5 +1,0 @@
-***BOT EN COUR DE DÉVELOPPEMENT***
-
-
-## `VERSION BÊTA DISPONIBLE`
-* [ICI](https://github.com/toge012345/TOGE-MD2)
