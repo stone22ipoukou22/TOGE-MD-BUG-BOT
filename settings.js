@@ -10,8 +10,8 @@ global.location = "America, New York, Manhattan" //ur location
 global.botname = '𝗧𝗢𝗚𝗘-𝗠𝗗' //ur bot name
 global.ownernumber = '13038480418' //ur owner number
 global.ownername = '•.¸♡ 𝐓𝐎𝐆𝐄 𝐈𝐍𝐔𝐌𝐀𝐊𝐈 ♡¸.•' //ur owner name
-global.websitex = "https://youtu.be/tLq8_qOOGFI"
-global.wagc = "https://whatsapp.com/channel/0029VaG9VfPKWEKk1rxTQD20"
+global.websitex = "https://youtube.com/@kenzo3146?si=zEDdNvUX1n8T_Trz"
+global.wagc = "https://whatsapp.com/channel/0029VaYtF0Z2975CYz9Fmv2k"
 global.themeemoji = '🍫'
 global.wm = "𝗧𝗢𝗚𝗘-𝗠𝗗"
 global.botscript = 'https://github.com/toge012345/TOGE-MD'
