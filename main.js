@@ -1,4 +1,5 @@
- require('./settings')
+/*
+require('./settings')
 const makeWASocket = require("@whiskeysockets/baileys").default
 const { uncache, nocache } = require('./lib/loader')
 const { color } = require('./lib/color')
