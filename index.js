@@ -1,4 +1,5 @@
-/*const {
+/*
+const {
    spawn
 } = require('child_process')
 const path = require('path')
@@ -22,4 +23,5 @@ function start() {
          if (code == '.' || code == 1 || code == 0) start()
       })
 }
-start()*/
+start()
+*/
