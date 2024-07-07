@@ -3,7 +3,9 @@
 <p align="center">
   <a href="https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo">
     <img alt=Support height="550" src="https://telegra.ph/file/97c008170fe8e6e714a32.jpg"
-    </p>
+    <p align="center">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ff00ab&center=true&vCenter=true&multiline=false&lines=BASE BY DGXEON." alt="">
+</p>
 <h1 align="center"> 𝗧𝗢𝗚𝗘-𝗠𝗗 </h1>
 </h1>
 <p align="center"> 𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐛𝐨𝐧𝐝 𝐨𝐟 𝐭𝐡𝐞 𝐬𝐮𝐩𝐩𝐨𝐫𝐭 👇
@@ -36,17 +38,52 @@
 3. ***PAIR-CODE :***
     <br>
 <a href='https://toge-md-web.onrender.com' target="_blank"><img alt='PAIR-CODE' src='https://img.shields.io/badge/-CODE-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
+4. ***QR-CODE :***
+    <br>
+<a href='https://gpt-qr-code.onrender.com' target="_blank"><img alt='PAIR-CODE' src='https://img.shields.io/badge/-CODE-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
 
+***Qr code by [DarkMakerofc](https://github.com/DarkMakerofc)***
+  
+   
 ### `DEPLOY TO REPLIT`
 
 1. If You don't have an account in Replit. Create a account.
     <br>
 <a href='https://replit.com/signup' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
 
-
 2. Now Deploy
     <br>
     <a href='https://repl.it/github/toge012345/TOGE-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
+
+### DEPLOY TO CODESPACE
+
+3. If You don't have a account in Codespace. Create a account.
+    <br>
+<a href='https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fcodespaces' target="_blank"><img alt='Codespaces' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=visualstudiocode' width="96.35" height="28"/></a></p>
+
+4. Now Deploy
+    <br>
+<a href='https://github.com/codespaces/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=visualstudiocode' width="96.35" height="28"/></a></p>
+
+#### DEPLOY TO HEROKU 
+
+1. If You don't have a account in Heroku. Create a account.
+    <br>
+<a href='https://signup.heroku.com/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+
+2. Now Deploy
+    <br>
+<a href='https://xlcon-v3-deloy.vercel.app/' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+
+#### DEPLOY TO RAILWAY
+
+7. If You don't have a account in Railway. Create a account.
+    <br>
+<a href='https://railway.app/login' target="_blank"><img alt='Railway' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=railway' width="96.35" height="28"/></a></p>
+
+8. Now Deploy
+    <br>
+<a href='https://railway.app/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=railway' width="96.35" height="28"/></a></p>
 
 
 ## `For Termux/Ubuntu`
