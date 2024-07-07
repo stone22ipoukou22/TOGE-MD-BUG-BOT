@@ -1,4 +1,5 @@
-/*
+/**
+
 require('./settings')
 const makeWASocket = require("@whiskeysockets/baileys").default
 const { uncache, nocache } = require('./lib/loader')
@@ -814,4 +815,5 @@ if (e.includes("Timed Out")) return
 if (e.includes("Value not found")) return
 console.log('Caught exception: ', err)
 })
-*/
+
+**/
