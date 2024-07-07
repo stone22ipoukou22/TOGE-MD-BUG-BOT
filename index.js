@@ -1,4 +1,3 @@
-/*
 const {
    spawn
 } = require('child_process')
@@ -24,4 +23,4 @@ function start() {
       })
 }
 start()
-*/
+
