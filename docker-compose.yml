@@ -1,17 +1,16 @@
-version: "3.9"
+version: "3.9" 
 services:
-  worker:
+  web:
     build: .
+    ports:
+      - "8000:5000"
     volumes:
       - .:/code
       - logvolume01:/var/log
     links:
       - redis
-    ports:
-      - "3000:3000"  
-    environment:
-      PREFIX: ${PREFIX}
   redis:
     image: redis
 volumes:
   logvolume01: {}
+  
