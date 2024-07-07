@@ -1,3 +1,4 @@
+/*
 require('./lib/listmenu')
 const {
 	downloadContentFromMessage,
