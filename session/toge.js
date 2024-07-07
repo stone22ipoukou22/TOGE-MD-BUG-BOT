@@ -1,3 +1,3 @@
 {
-	"nme": "toge Bot Multi Device "
+	"name": "toge Bot Multi Device "
 }
