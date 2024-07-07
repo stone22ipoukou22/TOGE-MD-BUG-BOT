@@ -1,7 +1,0 @@
-FROM quay.io/teamolduser/docker
-
-RUN git clone https://github.com/toge012345/TOGE-MD /root/TOGE-MD
-WORKDIR /root/TOGE-MD/
-RUN yarn install --network-concurrency 1
-EXPOSE 8000
-CMD ["yarn", "start"]
