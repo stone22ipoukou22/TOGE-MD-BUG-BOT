@@ -4,7 +4,7 @@
   <a href="https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo">
     <img alt=Support height="550" src="https://telegra.ph/file/97c008170fe8e6e714a32.jpg"
     <p align="center">
-  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ff00ab&center=true&vCenter=true&multiline=false&lines=BASE BY DGXEON." alt="">
+  <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ff00ab&center=true&vCenter=true&multiline=false&lines=BASE+BY+DGXEON." alt="">
 </p>
 <h1 align="center"> 𝗧𝗢𝗚𝗘-𝗠𝗗 </h1>
 </h1>
@@ -15,6 +15,8 @@
  </a>   
 
  
+### **ALERTE ⚠️**
+please add the cred.json file to the session folder
 
  ### ℹ️ **ABOUT TOGE-MD**
  Introducing TOGE-MD, It is designed to bring a whole new level of excitement to your boring WhatsApp use.hope it might be helpful to all loosen hope we feel delightful to save you release your feedback and share our chuddy buddy </p>
