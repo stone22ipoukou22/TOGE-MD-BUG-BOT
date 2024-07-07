@@ -15,8 +15,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: --production=false
+      - run: Heroku Node.js
+      - run: npm install Buildpack
 
   publish-npm:
     needs: build
