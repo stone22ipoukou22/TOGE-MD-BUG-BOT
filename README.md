@@ -39,10 +39,10 @@ please add the cred.json file to the session folder
 2. ***Click [FORK](https://github.com/toge012345/TOGE-MD/fork)***
 3. ***PAIR-CODE :***
     <br>
-<a href='https://toge-md-web.onrender.com' target="_blank"><img alt='PAIR-CODE' src='https://img.shields.io/badge/-CODE-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
-4. ***QR-CODE :***
+<a href='https://toge-md-web.onrender.com' target="_blank"><img alt='PAIR-CODE' src='https://img.shields.io/badge/-CODE-black?style=for-the-badge&logo=replit&logoColor=white'/></a> `Whatapp>Three dots>Linked devices>connect with phone number`
+5. ***QR-CODE :***
     <br>
-<a href='https://gpt-qr-code.onrender.com' target="_blank"><img alt='PAIR-CODE' src='https://img.shields.io/badge/-CODE-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
+<a href='https://gpt-qr-code.onrender.com' target="_blank"><img alt='PAIR-CODE' src='https://img.shields.io/badge/-CODE-black?style=for-the-badge&logo=replit&logoColor=white'/></a> `Whatapp>Three dots>Linked Devices`
 
 ***Qr code by [DarkMakerofc](https://github.com/DarkMakerofc)***
   
