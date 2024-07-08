@@ -37,15 +37,23 @@ please add the cred.json file to the session folder
 
 1. ***Star⭐ The Repository Must***
 2. ***Click [FORK](https://github.com/toge012345/TOGE-MD/fork)***
-3. *[PAIR-CODE](https://toge-md-web.onrender.com) Whatapp>Three dots>Linked devices>connect with phone number*
+3. ***[PAIR-CODE](https://toge-md-web.onrender.com) `Whatapp>Three dots>Linked devices>connect with phone number`***
     <br>
     
-5. *[QR-CODE](https://gpt-qr-code.onrender.com) Whatapp>Three dots>Linked Devices*
+5. ***[QR-CODE](https://gpt-qr-code.onrender.com) `Whatapp>Three dots>Linked Devices`***
     <br>
-
-***Qr code by [DarkMakerofc](https://github.com/DarkMakerofc)***
+<details close>
+<summary>𝗔𝗨𝗧𝗛𝗢𝗥 𝗢𝗙 𝗤𝗥 𝗖𝗢𝗗𝗘</summary>
+ 
+<br><br>   
+***[DarkMakerofc](https://github.com/DarkMakerofc)***
   
-   
+<details close>
+<summary>𝗖𝗟𝗜𝗖𝗞 𝗧𝗢 𝗖𝗛𝗢𝗢𝗦𝗘 𝗬𝗢𝗨𝗥 𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠</summary>
+ 
+<br><br>   
+
+
 ### `DEPLOY TO REPLIT`
 
 1. If You don't have an account in Replit. Create a account.
