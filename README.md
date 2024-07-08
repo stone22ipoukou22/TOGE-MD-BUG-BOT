@@ -37,12 +37,11 @@ please add the cred.json file to the session folder
 
 1. ***Star⭐ The Repository Must***
 2. ***Click [FORK](https://github.com/toge012345/TOGE-MD/fork)***
-3. ***PAIR-CODE :***
+3. *[PAIR-CODE](https://toge-md-web.onrender.com) Whatapp>Three dots>Linked devices>connect with phone number*
     <br>
-<a href='https://toge-md-web.onrender.com' target="_blank"><img alt='PAIR-CODE' src='https://img.shields.io/badge/-CODE-black?style=for-the-badge&logo=replit&logoColor=white'/></a> `Whatapp>Three dots>Linked devices>connect with phone number`
-5. ***QR-CODE :***
+    
+5. *[QR-CODE](https://gpt-qr-code.onrender.com) Whatapp>Three dots>Linked Devices*
     <br>
-<a href='https://gpt-qr-code.onrender.com' target="_blank"><img alt='PAIR-CODE' src='https://img.shields.io/badge/-CODE-black?style=for-the-badge&logo=replit&logoColor=white'/></a> `Whatapp>Three dots>Linked Devices`
 
 ***Qr code by [DarkMakerofc](https://github.com/DarkMakerofc)***
   
@@ -75,7 +74,7 @@ please add the cred.json file to the session folder
 
 2. Now Deploy
     <br>
-<a href='https://xlcon-v3-deloy.vercel.app/' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+<a href='https://dashboard.heroku.com/new?template=https://github.com/toge012345/TOGE-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
 #### DEPLOY TO RAILWAY
 
