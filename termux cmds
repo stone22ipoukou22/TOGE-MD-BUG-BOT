@@ -13,6 +13,6 @@ pkg install imagemagick -y
 pkg install yarn
 termux-setup-storage
 cd /sdcard
-cd cheemsbot14
+cd toge-md
 yarn install
 npm start
