@@ -42,12 +42,8 @@ please add the cred.json file to the session folder
     
 5. ***[QR-CODE](https://gpt-qr-code.onrender.com) `Whatapp>Three dots>Linked Devices`***
     <br>
-
-<details close>
-<summary>𝗔𝗨𝗧𝗛𝗢𝗥 𝗢𝗙 𝗤𝗥 𝗖𝗢𝗗𝗘</summary>
-
-<br><br>   
-***[DarkMakerofc](https://github.com/DarkMakerofc)***
+  
+***[𝗔𝗨𝗧𝗛𝗢𝗥 𝗢𝗙 𝗤𝗥 𝗖𝗢𝗗𝗘](https://github.com/DarkMakerofc)***
   
 
 <details close>
