@@ -458,7 +458,7 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
             if (mek.key.id.startsWith('Xeon') && mek.key.id.length === 16) return
             if (mek.key.id.startsWith('BAE5')) return
             m = smsg(XeonBotInc, mek, store)
-            require("./XeonCheems12")(XeonBotInc, m, chatUpdate, store)
+            require("./TOGE-MD.js")(XeonBotInc, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
