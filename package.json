@@ -1,19 +1,19 @@
 {
-    "name": "Cheems-Bot-MD",
+    "name": "TOGE-MD",
     "version": "11.0.0",
-    "description": "Whatsapp Bot By DGXeon",
+    "description": "Whatsapp Bot By toge012345",
     "main": "index.js",
     "type": "commonjs",
     "directories": {
         "lib": "lib",
         "src": "src",
-        "media": "XeonMedia"
+        "media": "TOGEMedia"
     },
     "scripts": {
         "start": "node index.js"
     },
-    "author": "DGXeon",
-    "license": "MIT",
+    "author": "toge012345",
+    "license": "Apache-2.0",
     "dependencies": {
         "@whiskeysockets/baileys": "^6.6.0",
         "@adiwajshing/keyed-db": "^0.2.4",
