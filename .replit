@@ -1,4 +1,4 @@
-run = "pm2 start /main.js --deep-monitoring --attach --name TOGE-MD"
+run = "pm2 start /index.js --deep-monitoring --attach --name TOGE-MD"
 entrypoint = "Settings.js"
 hidden = [".config", "package-lock.json"] 
  
