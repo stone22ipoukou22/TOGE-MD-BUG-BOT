@@ -1,8 +1,16 @@
-FROM quay.io/teamolduser/docker
+FROM quay.io/sampandey001/secktor
 
-COPY . /root/TOGE-MD
-WORKDIR /root/TOGE-MD
-RUN apt install ffmpeg
-RUN yarn install
+RUN git clone https://github.com/toge012345/TOGE-MD.git /root/toge012345
+
+# Clear npm cache and remove node_modules directories
+RUN npm cache clean --force
+RUN rm -rf /root/toge012345/node_modules
+
+# Install dependencies
+WORKDIR /root/toge012345
+RUN npm install
+
+# Add additional Steps To Run...
 EXPOSE 3000
-CMD ["yarn", "start"]
+CMD ["npm","start" ]
+# IF YOU ARE MODIFYING THIS BOT DONT CHANGE THIS  RUN rm -rf /root/toge012345/node_modules
