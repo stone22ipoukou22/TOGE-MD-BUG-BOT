@@ -1,6 +1,20 @@
-FROM quay.io/hermit/hermit-ser:latest
 
-RUN git clone https://github.com/toge012345/TOGE-MD /root/TOGE-MD
-WORKDIR /root/TOGE-MD/
-RUN yarn install --network-concurrency 1
-CMD ["node", "index.js"]
+FROM node:lts-buster
+
+RUN apt-get update && \
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  rm -rf /var/lib/apt/lists/*
+
+COPY package.json .
+
+RUN npm install && npm install qrcode-terminal
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["node", "index.js", "--server"]
