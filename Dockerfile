@@ -1,8 +1,19 @@
-FROM quay.io/teamolduser/docker
+FROM node:lts-buster
 
-COPY . /root/TOGE-MD
-WORKDIR /root/TOGE-MD
-RUN apt install ffmpeg
-RUN yarn install
-EXPOSE 3000
-CMD ["yarn", "start"]
+RUN apt-get update && \
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  rm -rf /var/lib/apt/lists/*
+
+COPY package.json .
+
+RUN npm i && npm i -g qrcode-terminal
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["node", "index.js", "--server"]
