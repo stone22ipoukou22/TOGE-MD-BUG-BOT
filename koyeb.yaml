@@ -1,4 +1,4 @@
-name: gifted-md-v5
+name: TOGE-MD
 type: WEB
 
 routes:
@@ -15,7 +15,7 @@ env:
   AUTO_RECORDING: false
   AUTO_REJECT_CALLS: false
   DEPLOYMENT_PLATFORM: koyeb
-  KOYEB_APP_NAME: Gifted-Md
+  KOYEB_APP_NAME: TOGE-MD
 
 regions:
   - fra
@@ -40,7 +40,7 @@ volumes: []
 skip_cache: false
 
 git:
-  repository: github.com/mouricedevs/Gifted-Md
+  repository: github.com/toge012345/TOGE-MD
   branch: main
   sha: aea4483e729d011f0c2671cb8ed51f61986eb203
   no_deploy_on_push: false
