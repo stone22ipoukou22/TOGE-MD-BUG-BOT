@@ -1,16 +1,16 @@
-run = "pm2 start /TOGE-MD --deep-monitoring --attach --name TOGE-MD"
-entrypoint = "./TOGE-MD.js"
-hidden = [".settings", "package-lock.json"]
+run = "pm2 start /main.js --deep-monitoring --attach --name TOGE-MD"
+entrypoint = "Setting.js"
+hidden = [".config", "package-lock.json"] 
  
 [languages]
-    
+
 [languages.javascript]
 pattern = "**/{*.js,*.jsx,*.ts,*.tsx}"
- 
+
 [languages.javascript.languageServer]
 start = "typescript-language-server --stdio"
-   
-[debugger] 
+
+[debugger]
 support = true
 
 [debugger.interactive]
@@ -42,7 +42,7 @@ type = "request"
 console = "externalTerminal"
 cwd = "."
 pauseForSourceMap = false
-program = "./TOGE-MD.js"
+program = "./index.js"
 request = "launch"
 sourceMaps = true
 stopOnEntry = false
