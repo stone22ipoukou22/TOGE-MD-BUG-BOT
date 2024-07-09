@@ -1,17 +1,6 @@
-FROM node:lts-buster
+FROM quay.io/hermit/hermit-ser:latest
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
-
-COPY package.json .
-
-RUN npm install
-
-COPY . .
-
-CMD ["node", "."]
+RUN git clone https://github.com/A-d-i-t-h-y-a-n/hermit-md /root/hermit-md
+WORKDIR /root/hermit-md/
+RUN yarn install --network-concurrency 1
+CMD ["node", "index.js"]
