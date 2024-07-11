@@ -157,7 +157,7 @@ const ImageXeon = JSON.parse(fs.readFileSync('./TOGEMedia/database/togeimage.jso
 const VideoXeon = JSON.parse(fs.readFileSync('./TOGEMedia/database/togevideo.json'))
 const DocXeon = JSON.parse(fs.readFileSync('./TOGEMedia/database/doc.json'))
 const ZipXeon = JSON.parse(fs.readFileSync('./TOGEMedia/database/zip.json'))
-const ApkXeon = JSON.parse(fs.readFileSync('./XeonMedia/database/apk.json'))
+const ApkXeon = JSON.parse(fs.readFileSync('./TOGEMedia/database/apk.json'))
 
 //bug database
 const { xeontext1 } = require('./src/data/function/XBug/xeontext1')
