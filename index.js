@@ -50,11 +50,12 @@ function start() {
          if (code == '.' || code == 1 || code == 0) start()
       })
 }
-start()
+start();
+
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+    res.send('Hello World!');
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
