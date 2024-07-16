@@ -1,8 +1,8 @@
-```TOGE-2.0```
+***BUG-BOT**
   </p>
 <p align="center">
   <a href="https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo">
-    <img alt=Support height="550" src="https://telegra.ph/file/97c008170fe8e6e714a32.jpg"
+    <img alt=Support height="550" src="https://graph.org/file/dca3670b656918fe9e34d.jpg"
     <p align="center">
   <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ff00ab&center=true&vCenter=true&multiline=false&lines=BASE+BY+DGXEON." alt="">
 </p>
