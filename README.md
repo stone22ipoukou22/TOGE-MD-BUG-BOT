@@ -92,30 +92,88 @@ please add the cred.json file to the session folder
     <br>
 <a href='https://railway.app/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=railway' width="96.35" height="28"/></a></p>
 
+</br>
+ 
 
-## `For Termux/Ubuntu`
-```bash
+# Termux Deployment
+```
+termux-setup-storage
+```
+```
 apt update
+```
+```
 apt upgrade
+```
+```
 pkg update && pkg upgrade
+```
+```
 pkg install bash
+```
+```
 pkg install libwebp
+```
+```
 pkg install git -y
-pkg install nodejs -y 
+```
+```
+pkg install nodejs -y
+```
+```
 pkg install ffmpeg -y 
+```
+```
 pkg install wget
-pkg install imagemagick -y
-git clone https://github.com/toge012345/TOGE-MD
+```
+```
+pkg install yarn
+```
+```
+git clone (copy and paste your forked repo link not mine to save changes your changes) 
+```
+```
 cd TOGE-MD
+```
+```
 yarn install
+```
+```
 npm start
 ```
 
-## `For 24/7 Activation (Termux)`
-```bash
-npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+- If you want Command For 24/7 (might no work) 
+```js
+npm i -g forever && forever index.js && forever save && forever logs
 ```
+<br>
 
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+<br>
+<h2 align="center"> 🛡️ Windows Cmd & Vs 🛡️ </h2>
+
+- [Download ffmpeg](https://ffmpeg.org/download.html#build-windows) and set the path
+- [Download wget](https://eternallybored.org/misc/wget/releases/) and set the path
+- [Download Node.js](https://nodejs.org/en/download/)
+- [Download Git](https://git-scm.com/downloads)
+- [Download Libwebp](https://developers.google.com/speed/webp/download)
+
+```cmd
+> git clone https://github.com/toge012345/BUG-BOT-X-TOGE-MD.git
+```
+```
+> cd TOGE-MD
+```
+```
+> yarn install
+```
+```
+> npm start
+```
+<a><img src='https://i.imgur.com/LyHic3i.gif'/></a><a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+## ```Connect With Me```<img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/handshake.gif" width ="80"></h1> 
 
 ##
 - ***Star ⭐ My Repo If You Like TOGE-MD.***
