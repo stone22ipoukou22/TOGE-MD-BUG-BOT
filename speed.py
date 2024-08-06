@@ -1,31 +1,3 @@
-##------------------------------------------------------------------------------------------------------------------------------
-##                                     TOGE-MD WHATSAPP BOT
-##
-##                                           V.1.2.0
-##
-##                               ▀▀█▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀ 　 ▒█▀▄▀█ ▒█▀▀▄ 
-##                               ░▒█░░ ▒█░░▒█ ▒█░▄▄ ▒█▀▀▀ 　 ▒█▒█▒█ ▒█░▒█ 
-##                               ░▒█░░ ▒█▄▄▄█ ▒█▄▄█ ▒█▄▄▄ 　 ▒█░░▒█ ▒█▄▄▀
-##
-##------------------------------------------------------------------------------------------------------------------------------
-
-
-# @project_name : TOGE-MD
-# @Developer : TOGE INUMAKI
-# @Version : v.1.2.7
-# @license : APACHE-2.0
-
-#THIS PROJECT IS MADE UNDER THE CIRCUMSTANCES OF "APACHE-2.0"
-#MEANS ANY KIND OF (MISLEADING, RE-UPLOADING, RENG) WILL LEAD YOU#
-#TO A DMCA REPORT FROM THE OFFICIAL GITHUB, WHICH RESULT IN#
-#REMOVING UR COPIED/RE-UPLOADED PROJECT FROM THERE, IN SOME#
-#CONDITIONS IT CAN LEADS TO TERMINATE UR ACCOUNT FROM THAT PLATFORM#
-
-#│• @C_holder : toge12345#
-
-
-
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Copyright 2012 Matt Martz
@@ -68,7 +40,7 @@ __version__ = '2.1.4b1'
 
 
 class FakeShutdownEvent(object):
-    """Class to fake a threading.Event.isSet so that users of this module
+    """Class to fake a threading.Event.isSet so that home of this module
     are not required to register their own threading.Event()
     """
 
@@ -409,7 +381,7 @@ def create_connection(address, timeout=_GLOBAL_DEFAULT_TIMEOUT,
     port)``) and return the socket object.  Passing the optional
     *timeout* parameter will set the timeout on the socket instance
     before attempting to connect.  If no *timeout* is supplied, the
-    global default timeout setting returned by :func:`getdefaulttimeout`
+    global default timeout setting returned by :fun`getdefaulttimeout`
     is used.  If *source_address* is set it must be a tuple of (host, port)
     for the socket to bind as a source address before making the connection.
     An host of '' or port 0 tells the OS to use the default.
@@ -1740,7 +1712,7 @@ def parse_args():
     description = (
         'Command line interface for testing internet bandwidth using '
         'speedtest.net.\n'
-        '------------------------------------------------------------'
+        '------------------------------------------------'
         '--------------\n'
         'https://github.com/sivel/speedtest-cli')
 
@@ -1908,7 +1880,7 @@ def shell():
     else:
         callback = print_dots(shutdown_event)
 
-    printer('*• SPEEDTEST.NET*\n\n', quiet)
+    printer('', quiet)
     try:
         speedtest = Speedtest(
             source_address=args.source,
@@ -1938,11 +1910,11 @@ def shell():
                         raise
         sys.exit(0)
 
-    printer('Testing from %(isp)s (%(ip)s)...' % speedtest.config['client'],
+    printer('*🌁 ᴛᴇsᴛɪɴɢ ғʀᴏᴍ %(isp)s...*\n' % speedtest.config['client'],
             quiet)
 
     if not args.mini:
-        printer('Retrieving speedtest.net server list...', quiet)
+        printer('📑 ʀᴇᴛʀɪᴇᴠɪɴɢ speedtest.net sᴇʀᴠᴇʀ ʟɪsᴛ...', quiet)
         try:
             speedtest.get_servers(servers=args.server, exclude=args.exclude)
         except NoMatchedServers:
@@ -1960,26 +1932,26 @@ def shell():
             )
 
         if args.server and len(args.server) == 1:
-            printer('Retrieving information for the selected server...', quiet)
+            printer('📚 Retrieving information for the selected server...', quiet)
         else:
-            printer('Selecting best server based on ping...', quiet)
+            printer('🔍 sᴇʟᴇᴄᴛɪɴɢ ʙᴇsᴛ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴏɴ ᴘɪɴɢ...', quiet)
         speedtest.get_best_server()
     elif args.mini:
         speedtest.get_best_server(speedtest.set_mini_server(args.mini))
 
     results = speedtest.results
 
-    printer('Hosted by %(sponsor)s (%(name)s) [%(d)0.2f km]: '
-            '%(latency)s ms' % results.server, quiet)
+    printer('\n.........................................................\n🏠 *ʜᴏsᴛᴇᴅ ʙʏ :* %(sponsor)s\n🌍 *ʟᴏᴄᴀᴛɪᴏɴ :* %(name)s [%(d)0.2f km] '
+            '\n⚡ *ᴘɪɴɢ :* %(latency)s ms' % results.server, quiet)
 
     if args.download:
-        printer('Testing download speed\n', quiet,
+        printer('', quiet,
                 end=('', '\n')[bool(debug)])
         speedtest.download(
             callback=callback,
             threads=(None, 1)[args.single]
         )
-        printer('Download: %0.2f M%s/s' %
+        printer('*📥 ᴅᴏᴡɴʟᴏᴀᴅ:* %0.2f M%s/s' %
                 ((results.download / 1000.0 / 1000.0) / args.units[1],
                  args.units[0]),
                 quiet)
@@ -1987,17 +1959,12 @@ def shell():
         printer('Skipping download test', quiet)
 
     if args.upload:
-        printer('Testing upload speed\n', quiet,
-                end=('', '\n')[bool(debug)])
-        speedtest.upload(
-            callback=callback,
-            pre_allocate=args.pre_allocate,
-            threads=(None, 1)[args.single]
-        )
-        printer('Upload: %0.2f M%s/s' %
+        speedtest.upload()
+        printer('*📤 ᴜᴘʟᴏᴀᴅ:* %0.2f M%s/s' %
                 ((results.upload / 1000.0 / 1000.0) / args.units[1],
                  args.units[0]),
                 quiet)
+        printer("\n..................................................\n↬ ᴘᴏᴡᴇʀᴇᴅ ʙʏ *sᴘᴇᴇᴅᴛᴇsᴛ Ookla*")
     else:
         printer('Skipping upload test', quiet)
 
