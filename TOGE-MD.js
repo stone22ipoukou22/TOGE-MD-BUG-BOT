@@ -86,13 +86,13 @@ const xsteek = fs.readFileSync(`./69/x.webp`)
 const o = fs.readFileSync(`./69/o.jpg`)
 
 //media
-const VoiceNoteXeon = JSON.parse(fs.readFileSync('./XeonMedia/database/xeonvn.json'));
-const StickerXeon = JSON.parse(fs.readFileSync('./XeonMedia/database/xeonsticker.json'));
-const ImageXeon = JSON.parse(fs.readFileSync('./XeonMedia/database/xeonimage.json'));
-const VideoXeon = JSON.parse(fs.readFileSync('./XeonMedia/database/xeonvideo.json'));
-const DocXeon = JSON.parse(fs.readFileSync('./XeonMedia/database/doc.json'));
-const ZipXeon = JSON.parse(fs.readFileSync('./XeonMedia/database/zip.json'));
-const ApkXeon = JSON.parse(fs.readFileSync('./XeonMedia/database/apk.json'));
+const VoiceNoteXeon = JSON.parse(fs.readFileSync('./Media/database/xeonvn.json'));
+const StickerXeon = JSON.parse(fs.readFileSync('./Media/database/xeonsticker.json'));
+const ImageXeon = JSON.parse(fs.readFileSync('./Media/database/xeonimage.json'));
+const VideoXeon = JSON.parse(fs.readFileSync('./Media/database/xeonvideo.json'));
+const DocXeon = JSON.parse(fs.readFileSync('./Media/database/doc.json'));
+const ZipXeon = JSON.parse(fs.readFileSync('./Media/database/zip.json'));
+const ApkXeon = JSON.parse(fs.readFileSync('./Media/database/apk.json'));
 
 const prem = require('./src/premium');
 const owner = JSON.parse(fs.readFileSync('./src/owner.json'));
@@ -895,7 +895,7 @@ fs.writeFileSync('./src/user.json', JSON.stringify(xeonverifieduser, null, 2))
                             title: botname,
                             body: ownername,
                             previewType: "PHOTO",
-                            thumbnail: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
+                            thumbnail: fs.readFileSync('./Media/theme/togepic.jpg'),
                             sourceUrl: wagc
                         }
                     },
@@ -911,7 +911,7 @@ fs.writeFileSync('./src/user.json', JSON.stringify(xeonverifieduser, null, 2))
                         showAdAttribution: true,
                         title: botname,
                         body: ownername,
-                        thumbnail: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
+                        thumbnail: fs.readFileSync('./Media/theme/togepic.jpg'),
                         sourceUrl: websitex,
                         mediaType: 1,
                         renderLargerThumbnail: true
