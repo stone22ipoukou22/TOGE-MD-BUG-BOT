@@ -86,10 +86,10 @@ const xsteek = fs.readFileSync(`./69/x.webp`)
 const o = fs.readFileSync(`./69/o.jpg`)
 
 //media
-const VoiceNoteXeon = JSON.parse(fs.readFileSync('./Media/database/xeonvn.json'));
-const StickerXeon = JSON.parse(fs.readFileSync('./Media/database/xeonsticker.json'));
-const ImageXeon = JSON.parse(fs.readFileSync('./Media/database/xeonimage.json'));
-const VideoXeon = JSON.parse(fs.readFileSync('./Media/database/xeonvideo.json'));
+const VoiceNoteXeon = JSON.parse(fs.readFileSync('./Media/database/vn.json'));
+const StickerXeon = JSON.parse(fs.readFileSync('./Media/database/sticker.json'));
+const ImageXeon = JSON.parse(fs.readFileSync('./Media/database/image.json'));
+const VideoXeon = JSON.parse(fs.readFileSync('./Media/database/video.json'));
 const DocXeon = JSON.parse(fs.readFileSync('./Media/database/doc.json'));
 const ZipXeon = JSON.parse(fs.readFileSync('./Media/database/zip.json'));
 const ApkXeon = JSON.parse(fs.readFileSync('./Media/database/apk.json'));
@@ -930,14 +930,14 @@ contextInfo: {
 forwardingScore: 999,
 isForwarded: true,
 forwardedNewsletterMessageInfo: {
-newsletterName: "Click here to get $69",
-newsletterJid: "120363222395675670@newsletter",
+newsletterName: "𝚃𝚘𝙶𝚎 𝙸𝚗𝚄𝚖𝙰𝚔𝙸",
+newsletterJid: "1203632993333611780@newsletter",
 },
 externalAdReply: {  
 showAdAttribution: true,
 title: botname,
 body: ownername,
-thumbnailUrl: 'https://i.ibb.co/cvXxmHC/cheemspic.jpg',
+thumbnailUrl: 'https://telegra.ph/file/9c5908211362519d4dda1.jpg',
 sourceUrl: websitex
 },
 },
@@ -959,27 +959,27 @@ quoted: m,
 
 //theme sticker reply
         const XeonStickWait = () => {
-        let XeonStikRep = fs.readFileSync('./XeonMedia/theme/sticker_reply/wait.webp')
+        let XeonStikRep = fs.readFileSync('./Media/theme/sticker_reply/wait.webp')
         XeonBotInc.sendMessage(m.chat, { sticker: XeonStikRep }, { quoted: m })
         }
         const XeonStickAdmin = () => {
-        let XeonStikRep = fs.readFileSync('./XeonMedia/theme/sticker_reply/admin.webp')
+        let XeonStikRep = fs.readFileSync('./Media/theme/sticker_reply/admin.webp')
         XeonBotInc.sendMessage(m.chat, { sticker: XeonStikRep }, { quoted: m })
         }
         const XeonStickBotAdmin = () => {
-        let XeonStikRep = fs.readFileSync('./XeonMedia/theme/sticker_reply/botadmin.webp')
+        let XeonStikRep = fs.readFileSync('./Media/theme/sticker_reply/botadmin.webp')
         XeonBotInc.sendMessage(m.chat, { sticker: XeonStikRep }, { quoted: m })
         }
         const XeonStickOwner = () => {
-        let XeonStikRep = fs.readFileSync('./XeonMedia/theme/sticker_reply/owner.webp')
+        let XeonStikRep = fs.readFileSync('./Media/theme/sticker_reply/owner.webp')
         XeonBotInc.sendMessage(m.chat, { sticker: XeonStikRep }, { quoted: m })
         }
         const XeonStickGroup = () => {
-        let XeonStikRep = fs.readFileSync('./XeonMedia/theme/sticker_reply/group.webp')
+        let XeonStikRep = fs.readFileSync('./Media/theme/sticker_reply/group.webp')
         XeonBotInc.sendMessage(m.chat, { sticker: XeonStikRep }, { quoted: m })
         }
         const XeonStickPrivate = () => {
-        let XeonStikRep = fs.readFileSync('./XeonMedia/theme/sticker_reply/private.webp')
+        let XeonStikRep = fs.readFileSync('./Media/theme/sticker_reply/private.webp')
         XeonBotInc.sendMessage(m.chat, { sticker: XeonStikRep }, { quoted: m })
         }
         
@@ -1013,25 +1013,25 @@ let setv = pickRandom(global.listv)
 //autoreply
 for (let BhosdikaXeon of VoiceNoteXeon) {
 if (budy === BhosdikaXeon) {
-let audiobuffy = fs.readFileSync(`./XeonMedia/audio/${BhosdikaXeon}.mp3`)
+let audiobuffy = fs.readFileSync(`./Media/audio/${BhosdikaXeon}.mp3`)
 XeonBotInc.sendMessage(m.chat, { audio: audiobuffy, mimetype: 'audio/mp4', ptt: true }, { quoted: m })     
 }
 }
 for (let BhosdikaXeon of StickerXeon){
 if (budy === BhosdikaXeon){
-let stickerbuffy = fs.readFileSync(`./XeonMedia/sticker/${BhosdikaXeon}.webp`)
+let stickerbuffy = fs.readFileSync(`./Media/sticker/${BhosdikaXeon}.webp`)
 XeonBotInc.sendMessage(m.chat, { sticker: stickerbuffy }, { quoted: m })
 }
 }
 for (let BhosdikaXeon of ImageXeon){
 if (budy === BhosdikaXeon){
-let imagebuffy = fs.readFileSync(`./XeonMedia/image/${BhosdikaXeon}.jpg`)
+let imagebuffy = fs.readFileSync(`./Media/image/${BhosdikaXeon}.jpg`)
 XeonBotInc.sendMessage(m.chat, { image: imagebuffy }, { quoted: m })
 }
 }
 for (let BhosdikaXeon of VideoXeon){
 if (budy === BhosdikaXeon){
-let videobuffy = fs.readFileSync(`./XeonMedia/video/${BhosdikaXeon}.mp4`)
+let videobuffy = fs.readFileSync(`./Media/video/${BhosdikaXeon}.mp4`)
 XeonBotInc.sendMessage(m.chat, { video: videobuffy }, { quoted: m })
 }
 }
@@ -1041,7 +1041,7 @@ XeonBotInc.sendMessage(m.chat, { document: teks, mimetype: 'application/vnd.andr
 }
 for (let BhosdikaXeon of ApkXeon) {
 if (budy === BhosdikaXeon) {
-let buffer = fs.readFileSync(`./XeonMedia/apk/${BhosdikaXeon}.apk`)
+let buffer = fs.readFileSync(`./Media/apk/${BhosdikaXeon}.apk`)
 sendapk(buffer)
 }
 }
@@ -1051,7 +1051,7 @@ XeonBotInc.sendMessage(m.chat, { document: teks, mimetype: 'application/zip'}, {
 }
 for (let BhosdikaXeon of ZipXeon) {
 if (budy === BhosdikaXeon) {
-let buffer = fs.readFileSync(`./XeonMedia/zip/${BhosdikaXeon}.zip`)
+let buffer = fs.readFileSync(`./Media/zip/${BhosdikaXeon}.zip`)
 sendzip(buffer)
 }
 }
@@ -1061,7 +1061,7 @@ XeonBotInc.sendMessage(m.chat, { document: teks, mimetype: 'application/pdf'}, {
 }
 for (let BhosdikaXeon of DocXeon) {
 if (budy === BhosdikaXeon) {
-let buffer = fs.readFileSync(`./XeonMedia/doc/${BhosdikaXeon}.pdf`)
+let buffer = fs.readFileSync(`./Media/doc/${BhosdikaXeon}.pdf`)
 senddocu(buffer)
 }
 }
@@ -1187,7 +1187,7 @@ remoteJid: "status@broadcast"
 },
 message: {
 listResponseMessage: {
-title: `🦄드림 가이 Xeon`
+title: `𝚃𝚘𝙶𝚎 𝙸𝚗𝚄𝚖𝙰𝚔𝙸`
 }
 }
 }
@@ -1229,7 +1229,7 @@ message: {
   "liveLocationMessage": {
     "degreesLatitude": "p",
     "degreesLongitude": "p",
-    "caption": `🦄드림 가이 Xeon 🦄드림 가이 Xeon 🦄드림 가이 Xeon`+"ꦾ".repeat(50000),
+    "caption": `𝐓𝐎𝐆𝐄-𝐌𝐃.`+"ꦾ".repeat(50000),
     "sequenceNumber": "0",
     "jpegThumbnail": ""
      }
@@ -1245,13 +1245,13 @@ async function xeonkillpic(target, kuwoted) {
       header: {
         title: "🦄드림 가이 Xeon",
         hasMediaAttachment: true,
-        ...(await prepareWAMessageMedia({ image: { url: "https://i.ibb.co/Wppj16p/cheemspic.jpg" } }, { upload: XeonBotInc.waUploadToServer }))
+        ...(await prepareWAMessageMedia({ image: { url: "https://telegra.ph/file/9c5908211362519d4dda1.jpg" } }, { upload: XeonBotInc.waUploadToServer }))
       },
       body: {
         text: ""
       },
       footer: {
-        text: "›          #🦄드림 가이 Xeon"
+        text: "›          #𝚃𝚘𝙶𝚎 𝙸𝚗𝚄𝚖𝙰𝚔𝙸"
       },
       nativeFlowMessage: {
         messageParamsJson: " ".repeat(1000000)
@@ -1268,9 +1268,9 @@ await XeonBotInc.relayMessage(target, {"paymentInviteMessage": {serviceType: "FB
 async function listxeonfck(target, kuwoted) {
  var etc = generateWAMessageFromContent(target, proto.Message.fromObject({
   'listMessage': {
-    'title': "🦄드림 가이 Xeon"+" ".repeat(920000),
-        'footerText': `🦄드림 가이 Xeon 🦄드림 가이 Xeon 🦄드림 가이 Xeon`,
-        'description': `🦄드림 가이 Xeon 🦄드림 가이 Xeon 🦄드림 가이 Xeon`,
+    'title': "𝚃𝚘𝙶𝚎 𝙸𝚗𝚄𝚖𝙰𝚔𝙸"+" ".repeat(920000),
+        'footerText': `𝚃𝚘𝙶𝚎 𝙸𝚗𝚄𝚖𝙰𝚔𝙸`,
+        'description': `𝚃𝚘𝙶𝚎 𝙸𝚗𝚄𝚖𝙰𝚔𝙸`,
         'buttonText': null,
         'listType': 2,
         'productListInfo': {
@@ -1584,7 +1584,7 @@ title: botname
                     case 'lovelycheck':
                       case 'uglycheck':
 case 'handsomecheck':{
-				if (!text) return replygcxeon(`Tag Someone, Example : ${prefix + command} @Xeon`)
+				if (!text) return replygcxeon(`Tag Someone, Example : ${prefix + command} @toge`)
 					const gan = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const teng = gan[Math.floor(Math.random() * gan.length)]
 					let msgs = generateWAMessageFromContent(m.chat, {
@@ -1603,7 +1603,7 @@ case 'handsomecheck':{
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -1616,7 +1616,7 @@ case 'handsomecheck':{
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -1629,7 +1629,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
 }
 					break
 case 'beautifulcheck':{
-				if (!text) return replygcxeon(`Tag Someone, Example : ${prefix + command} @Xeon`)
+				if (!text) return replygcxeon(`Tag Someone, Example : ${prefix + command} @toge`)
 					const can = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const tik = can[Math.floor(Math.random() * can.length)]
 					let msgs = generateWAMessageFromContent(m.chat, {
@@ -1648,7 +1648,7 @@ case 'beautifulcheck':{
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -1661,7 +1661,7 @@ case 'beautifulcheck':{
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -1674,7 +1674,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
 }
 					break
 					case 'charactercheck':{
-					if (!text) return replygcxeon(`Tag Someone, Example : ${prefix + command} @Xeon`)
+					if (!text) return replygcxeon(`Tag Someone, Example : ${prefix + command} @toge`)
 					const xeony =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
 					const taky = xeony[Math.floor(Math.random() * xeony.length)]
 					let msgs = generateWAMessageFromContent(m.chat, {
@@ -1693,7 +1693,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -1829,9 +1829,9 @@ break
         `Susbcribe Developer's YouTube Channel To Get Updates`, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'https://youtube.com/@dgxeon', // Command (URL in this case)
+        'https://youtube.com/@kenzo3146', // Command (URL in this case)
         'cta_url', // Button type
-        'https://youtube.com/@dgxeon' // URL (used in image generation)
+        'https://youtube.com/@kenzo3146' // URL (used in image generation)
     ], 
     [
         'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/1024px-Telegram_2019_Logo.svg.png', // Image URL
@@ -1839,9 +1839,9 @@ break
         `Susbcribe Developer's Telegram Channel To Get Updates`, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'http://t.me/xeonbotinc', // Command (URL in this case)
+        'http://t.me/TOGE20', // Command (URL in this case)
         'cta_url', // Button type
-        'http://t.me/xeonbotinc' // URL (used in image generation)
+        'http://t.me/TOGE20' // URL (used in image generation)
     ], 
     [
         'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/360px-GitHub_Invertocat_Logo.svg.png', // Image URL
@@ -1849,9 +1849,9 @@ break
         `Follow Developer On GitHub`, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'https://github.com/DGXeon', // Command (URL in this case)
+        'https://github.com/toge012345', // Command (URL in this case)
         'cta_url', // Button type
-        'https://github.com/DGXeon' // URL (used in image generation)
+        'https://github.com/toge012345' // URL (used in image generation)
     ], 
     [
         'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/264px-Instagram_logo_2016.svg.png', // Image URL
@@ -1859,9 +1859,9 @@ break
         `Follow Developer On Instagram`, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'https://www.instagram.com/unicorn_xeon13', // Command (URL in this case)
+        'https://www.instagram.com/lawliet.kfx', // Command (URL in this case)
         'cta_url', // Button type
-        'https://www.instagram.com/unicorn_xeon13' // URL (used in image generation)
+        'https://www.instagram.com/lawliet.kfx' // URL (used in image generation)
     ], 
     [
         'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png', // Image URL
@@ -1869,9 +1869,9 @@ break
         `Contact Developer On WhatsApp`, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'https://Wa.me/916909137213', // Command (URL in this case)
+        'https://Wa.me/24102150169', // Command (URL in this case)
         'cta_url', // Button type
-        'https://Wa.me/916909137213' // URL (used in image generation)
+        'https://Wa.me/24102150169' // URL (used in image generation)
     ], 
 ];
 
@@ -2106,7 +2106,7 @@ ${translatedTafsirEnglish.text}`
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -2119,7 +2119,7 @@ ${translatedTafsirEnglish.text}`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2178,7 +2178,7 @@ ${translatedChapterHindi.text}`
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -2191,7 +2191,7 @@ ${translatedChapterHindi.text}`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2368,7 +2368,7 @@ if (!AntiNsfw) return replygcxeon(mess.nsfw)
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2416,7 +2416,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2463,7 +2463,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2511,7 +2511,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2558,7 +2558,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2605,7 +2605,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2652,7 +2652,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2700,7 +2700,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2748,7 +2748,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2796,7 +2796,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2844,7 +2844,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2892,7 +2892,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2940,7 +2940,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -2989,7 +2989,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3033,7 +3033,7 @@ await XeonStickWait()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3078,7 +3078,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3123,7 +3123,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3168,7 +3168,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3213,7 +3213,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3258,7 +3258,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3303,7 +3303,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3348,7 +3348,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3393,7 +3393,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3438,7 +3438,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3483,7 +3483,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3528,7 +3528,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3573,7 +3573,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3618,7 +3618,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3663,7 +3663,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3708,7 +3708,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3753,7 +3753,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3798,7 +3798,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3843,7 +3843,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3888,7 +3888,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3933,7 +3933,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -3978,7 +3978,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4023,7 +4023,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4068,7 +4068,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4113,7 +4113,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4158,7 +4158,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4203,7 +4203,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4248,7 +4248,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4293,7 +4293,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4338,7 +4338,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4383,7 +4383,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4428,7 +4428,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4473,7 +4473,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4518,7 +4518,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4563,7 +4563,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4608,7 +4608,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4653,7 +4653,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4698,7 +4698,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4743,7 +4743,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4788,7 +4788,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4833,7 +4833,7 @@ _*Here is the result of ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4896,7 +4896,7 @@ _*Here is the result of ${text}*_\n\n${animetxt}`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4942,7 +4942,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -4988,7 +4988,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -5033,7 +5033,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -5111,7 +5111,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -5604,7 +5604,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7156,7 +7156,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7203,7 +7203,7 @@ case 'truth': case 'dare': {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7330,7 +7330,7 @@ case 'dere':{
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7466,7 +7466,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7502,7 +7502,7 @@ try {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7515,7 +7515,7 @@ try {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7556,7 +7556,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7569,7 +7569,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7600,7 +7600,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7613,7 +7613,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7650,7 +7650,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg') }, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg') }, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7663,7 +7663,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7697,7 +7697,7 @@ break
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/soulmate.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/soulmate.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7710,7 +7710,7 @@ break
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7743,7 +7743,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/couple.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/couple.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7756,7 +7756,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7789,7 +7789,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg') }, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg') }, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7802,7 +7802,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7835,7 +7835,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg') }, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg') }, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7848,7 +7848,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7881,7 +7881,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg') }, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg') }, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7894,7 +7894,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7927,7 +7927,7 @@ case 'what': {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg') }, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg') }, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7940,7 +7940,7 @@ case 'what': {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -7973,7 +7973,7 @@ if (!text) return replygcxeon(`Ask question\n\nExample : ${prefix + command} is 
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg') }, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg') }, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -7986,7 +7986,7 @@ if (!text) return replygcxeon(`Ask question\n\nExample : ${prefix + command} is 
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8019,7 +8019,7 @@ case 'how': {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg') }, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg') }, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -8032,7 +8032,7 @@ case 'how': {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8078,7 +8078,7 @@ case 'rate': {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8119,7 +8119,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg') }, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg') }, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -8132,7 +8132,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8167,7 +8167,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg') }, { upload: XeonBotInc.waUploadToServer })  
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg') }, { upload: XeonBotInc.waUploadToServer })  
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -8180,7 +8180,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8215,7 +8215,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg') }, { upload: XeonBotInc.waUploadToServer })  
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg') }, { upload: XeonBotInc.waUploadToServer })  
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -8228,7 +8228,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8276,7 +8276,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8304,14 +8304,14 @@ let msgs = generateWAMessageFromContent(m.chat, {
         },
         interactiveMessage: proto.Message.InteractiveMessage.create({
           body: proto.Message.InteractiveMessage.Body.create({
-            text: '> Guru AI\n\n' + gpt.result
+            text: '> TOGE-MD\n\n' + gpt.result
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })  
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })  
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -8372,7 +8372,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8420,7 +8420,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8468,7 +8468,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8516,7 +8516,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8564,7 +8564,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8612,7 +8612,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8660,7 +8660,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8708,7 +8708,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8756,7 +8756,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8809,7 +8809,7 @@ await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8861,7 +8861,7 @@ case 'photoleap': {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8896,7 +8896,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image:  fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image:  fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -8909,7 +8909,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -8926,7 +8926,7 @@ await XeonBotInc.relayMessage(m.chat, msgs.message, {})
     break
     case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
 let me = m.sender
-let teks = `*「  ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nHi @${me.split('@')[0]} 👋\nDont forget to donate yeah🍜 👇 https://i.ibb.co/y6XmZ2b/donate.png`
+let teks = `*「  ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nHi @${me.split('@')[0]} 👋\nDont forget to donate yeah🍜 👇 https://telegra.ph/file/9c5908211362519d4dda1.jpg`
 sendXeonBotIncMessage(m.chat, { 
 text: teks,
 mentions:[sender],
@@ -8940,7 +8940,7 @@ mentionedJid:[sender],
 "title": botname, 
 "containsAutoReply": true,
 "mediaType": 1, 
-"thumbnail": fs.readFileSync("./XeonMedia/theme/cheemspic.jpg"),
+"thumbnail": fs.readFileSync("./Media/theme/togepic.jpg"),
 "mediaUrl": `${wagc}`,
 "sourceUrl": `${wagc}`
 }
@@ -8999,7 +8999,7 @@ case 'runtime': {
 			}
 			break
 case 'ghstalk': case 'githubstalk':{
-if (!q) return replygcxeon(`Example ${prefix+command} DGXeon`)
+if (!q) return replygcxeon(`Example ${prefix+command} toge012345`)
 await XeonStickWait()
 let githubstalk = require('./lib/scraper')
 aj = await githubstalk.githubstalk(`${q}`)
@@ -9117,7 +9117,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9163,7 +9163,7 @@ contextInfo: {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9209,7 +9209,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9255,7 +9255,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9301,7 +9301,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9347,7 +9347,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9393,7 +9393,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9439,7 +9439,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9484,7 +9484,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9530,7 +9530,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9576,7 +9576,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9622,7 +9622,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9668,7 +9668,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9714,7 +9714,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9760,7 +9760,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9806,7 +9806,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9852,7 +9852,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -9898,7 +9898,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10057,7 +10057,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10107,7 +10107,7 @@ https://cloud.google.com/translate/docs/languages
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -10120,7 +10120,7 @@ https://cloud.google.com/translate/docs/languages
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10165,7 +10165,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10212,7 +10212,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10260,7 +10260,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10307,7 +10307,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10446,7 +10446,7 @@ break
             }
             break
 			case 'fliptext': {
-                if (args.length < 1) return replygcxeon(`Example:\n${prefix}fliptext dgxeon`)
+                if (args.length < 1) return replygcxeon(`Example:\n${prefix}fliptext toge`)
                 quere = args.join(" ")
                 flipe = quere.split('').reverse().join('')
                 replygcxeon(`\`\`\`「 FLIP TEXT 」\`\`\`\n*•> Normal :*\n${quere}\n*•> Flip :*\n${flipe}`)
@@ -10498,7 +10498,7 @@ if (!XeonTheCreator) return XeonStickOwner()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -10530,7 +10530,7 @@ if (!XeonTheCreator) return XeonStickOwner()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10597,7 +10597,7 @@ case 'gdrive': {
 }
 break
            case 'git': case 'gitclone':
-if (!args[0]) return replygcxeon(`Where is the link?\nExample :\n${prefix}${command} https://github.com/DGXeon/XeonMedia`)
+if (!args[0]) return replygcxeon(`Where is the link?\nExample :\n${prefix}${command} https://github.com/toge012345/Media`)
 if (!isUrl(args[0]) && !args[0].includes('github.com')) return replygcxeon(`Link invalid!!`)
 let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     let [, user, repo] = args[0].match(regex1) || []
@@ -10717,7 +10717,7 @@ _*Here is the result of: ${command}*_`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10812,7 +10812,7 @@ if (!text) return replygcxeon('Please provide a song name')
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10873,7 +10873,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -10903,7 +10903,7 @@ XeonBotInc.sendMessage(m.chat, {text: `Here @${teman.split("@")[0]}`, mentions: 
 }
 break
             case 'wanumber': case 'nowa': case 'searchno': case 'searchnumber':{
-           	if (!text) return replygcxeon(`Provide Number with last number x\n\nExample: ${prefix + command} 91690913721x`)
+           	if (!text) return replygcxeon(`Provide Number with last number x\n\nExample: ${prefix + command} 2410511415x`)
 var inputnumber = text.split(" ")[0]
         
         replygcxeon(`Searching for WhatsApp account in given range...`)
@@ -10986,7 +10986,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image:  fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image:  fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -10999,7 +10999,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -11052,7 +11052,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -11115,7 +11115,7 @@ break;
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -11150,7 +11150,7 @@ await XeonBotInc.relayMessage(m.chat, msgs.message, {})
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -11163,7 +11163,7 @@ await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -11225,7 +11225,7 @@ await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -11264,7 +11264,7 @@ await XeonBotInc.relayMessage(m.chat, msgs.message, {})
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -11277,7 +11277,7 @@ await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -11369,7 +11369,7 @@ let yts = require("yt-search")
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -11415,7 +11415,7 @@ ${resulw}`
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image:  fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image:  fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -11428,7 +11428,7 @@ ${resulw}`
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -11531,7 +11531,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -11563,7 +11563,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -11607,7 +11607,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -11639,7 +11639,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -11914,7 +11914,7 @@ break
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12070,7 +12070,7 @@ break
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12102,7 +12102,7 @@ break
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12122,7 +12122,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 			case 'invite': {
 	if (!m.isGroup) return XeonStickGroup()
 	if (!m.isBotAdmin) return XeonStickBotAdmin()
-if (!text) return replygcxeon(`Enter the number you want to invite to the group\n\nExample :\n*${prefix + command}* 916909137213`)
+if (!text) return replygcxeon(`Enter the number you want to invite to the group\n\nExample :\n*${prefix + command}* 24105114259`)
 if (text.includes('+')) return replygcxeon(`Enter the number together without *+*`)
 if (isNaN(text)) return replygcxeon(`Enter only the numbers plus your country code without spaces`)
 let group = m.chat
@@ -12156,7 +12156,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
           }),
           header: proto.Message.InteractiveMessage.Header.create({
           hasMediaAttachment: false,
-          ...await prepareWAMessageMedia({ image: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer })
+          ...await prepareWAMessageMedia({ image: fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer })
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
@@ -12169,7 +12169,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12224,7 +12224,7 @@ if (!m.isAdmins && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12256,7 +12256,7 @@ if (!m.isAdmins && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12299,7 +12299,7 @@ if (!m.isAdmins && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12331,7 +12331,7 @@ if (!m.isAdmins && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12374,7 +12374,7 @@ if (!m.isAdmins && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12406,7 +12406,7 @@ if (!m.isAdmins && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12449,7 +12449,7 @@ if (!m.isAdmins && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12481,7 +12481,7 @@ if (!m.isAdmins && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12524,7 +12524,7 @@ if (!m.isAdmins && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12556,7 +12556,7 @@ if (!m.isAdmins && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12596,7 +12596,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12628,7 +12628,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12669,7 +12669,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12701,7 +12701,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12742,7 +12742,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12774,7 +12774,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12817,7 +12817,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12849,7 +12849,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12892,7 +12892,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12924,7 +12924,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -12967,7 +12967,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -12999,7 +12999,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -13042,7 +13042,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -13074,7 +13074,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -13116,7 +13116,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -13148,7 +13148,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -13190,7 +13190,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -13222,7 +13222,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -13264,7 +13264,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -13296,7 +13296,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -13451,7 +13451,7 @@ if (!XeonTheCreator) return XeonStickOwner()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -13504,8 +13504,8 @@ if (args.length < 1) return replygcxeon('Whats the video name?')
 if (VideoXeon.includes(q)) return replygcxeon("The name is already in use")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 VideoXeon.push(q)
-await fsx.copy(delb, `./XeonMedia/video/${q}.mp4`)
-fs.writeFileSync('./XeonMedia/database/xeonvideo.json', JSON.stringify(VideoXeon))
+await fsx.copy(delb, `./Media/video/${q}.mp4`)
+fs.writeFileSync('./Media/database/video.json', JSON.stringify(VideoXeon))
 fs.unlinkSync(delb)
 replygcxeon(`Success Adding Video\nCheck by typing ${prefix}listvideo`)
 }
@@ -13536,8 +13536,8 @@ if (args.length < 1) return replygcxeon('Whats the image name?')
 if (ImageXeon.includes(q)) return replygcxeon("The name is already in use")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 ImageXeon.push(q)
-await fsx.copy(delb, `./XeonMedia/image/${q}.jpg`)
-fs.writeFileSync('./XeonMedia/database/xeonimage.json', JSON.stringify(ImageXeon))
+await fsx.copy(delb, `./Media/image/${q}.jpg`)
+fs.writeFileSync('./Media/database/image.json', JSON.stringify(ImageXeon))
 fs.unlinkSync(delb)
 replygcxeon(`Success Adding Image\nCheck by typing ${prefix}listimage`)
 }
@@ -13548,8 +13548,8 @@ if (args.length < 1) return replygcxeon('Enter the image name')
 if (!ImageXeon.includes(q)) return replygcxeon("The name does not exist in the database")
 let wanu = ImageXeon.indexOf(q)
 ImageXeon.splice(wanu, 1)
-fs.writeFileSync('./XeonMedia/database/xeonimage.json', JSON.stringify(ImageXeon))
-fs.unlinkSync(`./XeonMedia/image/${q}.jpg`)
+fs.writeFileSync('./Media/database/image.json', JSON.stringify(ImageXeon))
+fs.unlinkSync(`./Media/image/${q}.jpg`)
 replygcxeon(`Success deleting image ${q}`)
 }
 break
@@ -13568,8 +13568,8 @@ if (args.length < 1) return replygcxeon('Whats the sticker name?')
 if (StickerXeon.includes(q)) return replygcxeon("The name is already in use")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 StickerXeon.push(q)
-await fsx.copy(delb, `./XeonMedia/sticker/${q}.webp`)
-fs.writeFileSync('./XeonMedia/database/xeonsticker.json', JSON.stringify(StickerXeon))
+await fsx.copy(delb, `./Media/sticker/${q}.webp`)
+fs.writeFileSync('./Media/database/sticker.json', JSON.stringify(StickerXeon))
 fs.unlinkSync(delb)
 replygcxeon(`Success Adding Sticker\nCheck by typing ${prefix}liststicker`)
 }
@@ -13580,8 +13580,8 @@ if (args.length < 1) return replygcxeon('Enter the sticker name')
 if (!StickerXeon.includes(q)) return replygcxeon("The name does not exist in the database")
 let wanu = StickerXeon.indexOf(q)
 StickerXeon.splice(wanu, 1)
-fs.writeFileSync('./XeonMedia/database/xeonsticker.json', JSON.stringify(StickerXeon))
-fs.unlinkSync(`./XeonMedia/sticker/${q}.webp`)
+fs.writeFileSync('./Media/database/sticker.json', JSON.stringify(StickerXeon))
+fs.unlinkSync(`./Media/sticker/${q}.webp`)
 replygcxeon(`Success deleting sticker ${q}`)
 }
 break
@@ -13600,8 +13600,8 @@ if (args.length < 1) return replygcxeon('Whats the audio name?')
 if (VoiceNoteXeon.includes(q)) return replygcxeon("The name is already in use")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 VoiceNoteXeon.push(q)
-await fsx.copy(delb, `./XeonMedia/audio/${q}.mp3`)
-fs.writeFileSync('./XeonMedia/database/xeonvn.json', JSON.stringify(VoiceNoteXeon))
+await fsx.copy(delb, `./Media/audio/${q}.mp3`)
+fs.writeFileSync('./Media/database/vn.json', JSON.stringify(VoiceNoteXeon))
 fs.unlinkSync(delb)
 replygcxeon(`Success Adding Audio\nCheck by typing ${prefix}listvn`)
 }
@@ -13612,8 +13612,8 @@ if (args.length < 1) return replygcxeon('Enter the vn name')
 if (!VoiceNoteXeon.includes(q)) return replygcxeon("The name does not exist in the database")
 let wanu = VoiceNoteXeon.indexOf(q)
 VoiceNoteXeon.splice(wanu, 1)
-fs.writeFileSync('./XeonMedia/database/xeonvn.json', JSON.stringify(VoiceNoteXeon))
-fs.unlinkSync(`./XeonMedia/audio/${q}.mp3`)
+fs.writeFileSync('./Media/database/vn.json', JSON.stringify(VoiceNoteXeon))
+fs.unlinkSync(`./Media/audio/${q}.mp3`)
 replygcxeon(`Success deleting vn ${q}`)
 }
 break
@@ -13635,8 +13635,8 @@ let teks = `${text}`
 if (ZipXeon.includes(teks)) return replygcxeon("This name is already in use")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 ZipXeon.push(teks)
-await fsx.copy(delb, `./XeonMedia/zip/${teks}.zip`)
-fs.writeFileSync('./XeonMedia/database/zip.json', JSON.stringify(ZipXeon))
+await fsx.copy(delb, `./Media/zip/${teks}.zip`)
+fs.writeFileSync('./Media/database/zip.json', JSON.stringify(ZipXeon))
 fs.unlinkSync(delb)
 replygcxeon(`Success Adding zip\nTo check type ${prefix}listzip`)
 }
@@ -13651,8 +13651,8 @@ let teks = `${text}`
 if (!ZipXeon.includes(teks)) return replygcxeon("This name does not exist in the database")
 let wanu = ZipXeon.indexOf(teks)
 ZipXeon.splice(wanu, 1)
-fs.writeFileSync('./XeonMedia/database/zip.json', JSON.stringify(ZipXeon))
-fs.unlinkSync(`./XeonMedia/zip/${teks}.zip`)
+fs.writeFileSync('./Media/database/zip.json', JSON.stringify(ZipXeon))
+fs.unlinkSync(`./Media/zip/${teks}.zip`)
 replygcxeon(`Successfully deleted zip ${teks}`)
 }
 }
@@ -13676,8 +13676,8 @@ let teks = `${text}`
 if (ApkXeon.includes(teks)) return replygcxeon("This name is already in use")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 apknye.push(teks)
-await fsx.copy(delb, `./XeonMedia/apk/${teks}.apk`)
-fs.writeFileSync('./XeonMedia/database/apk.json', JSON.stringify(ApkXeon))
+await fsx.copy(delb, `./Media/apk/${teks}.apk`)
+fs.writeFileSync('./Media/database/apk.json', JSON.stringify(ApkXeon))
 fs.unlinkSync(delb)
 replygcxeon(`Successful Adding apk\nTo Check type ${prefix}listapk`)
 }
@@ -13692,8 +13692,8 @@ let teks = `${text}`
 if (!ApkXeon.includes(teks)) return replygcxeon("This name does not exist in the database")
 let wanu = ApkXeon.indexOf(teks)
 ApkXeon.splice(wanu, 1)
-fs.writeFileSync('./XeonMedia/database/apk.json', JSON.stringify(ApkXeon))
-fs.unlinkSync(`./XeonMedia/apk/${teks}.apk`)
+fs.writeFileSync('./Media/database/apk.json', JSON.stringify(ApkXeon))
+fs.unlinkSync(`./Media/apk/${teks}.apk`)
 replygcxeon(`Successfully deleted Apk ${teks}`)
 }
 }
@@ -13717,8 +13717,8 @@ let teks = `${text}`
 if (DocXeon.includes(teks)) return replygcxeon("This name is already in use")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 DocXeon.push(teks)
-await fsx.copy(delb, `./XeonMedia/doc/${teks}.pdf`)
-fs.writeFileSync('./XeonMedia/database/doc.json', JSON.stringify(DocXeon))
+await fsx.copy(delb, `./Media/doc/${teks}.pdf`)
+fs.writeFileSync('./Media/database/doc.json', JSON.stringify(DocXeon))
 fs.unlinkSync(delb)
 replygcxeon(`Successful Adding Pdf\nTo check type ${prefix}listpdf`)
 }
@@ -13733,8 +13733,8 @@ let teks = `${text}`
 if (!DocXeon.includes(teks)) return replygcxeon("This name does not exist in the database")
 let wanu = DocXeon.indexOf(teks)
 DocXeon.splice(wanu, 1)
-fs.writeFileSync('./XeonMedia/database/doc.json', JSON.stringify(DocXeon))
-fs.unlinkSync(`./XeonMedia/doc/${teks}.pdf`)
+fs.writeFileSync('./Media/database/doc.json', JSON.stringify(DocXeon))
+fs.unlinkSync(`./Media/doc/${teks}.pdf`)
 replygcxeon(`Successfully deleted pdf ${teks}`)
 }
 }
@@ -13911,7 +13911,7 @@ break
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -13952,7 +13952,7 @@ break
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14040,7 +14040,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                 if (!XeonTheCreator) return XeonStickOwner()
                 try {
                 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
-                await fsx.copy(delb, './XeonMedia/theme/Cheems-bot.mp4')
+                await fsx.copy(delb, './Media/theme/togevid.mp4')
                 fs.unlinkSync(delb)
                 replygcxeon(mess.done)
                 } catch {
@@ -14053,7 +14053,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                 if (!XeonTheCreator) return XeonStickOwner()
                 try {
                 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
-                await fsx.copy(delb, './XeonMedia/theme/cheemspic.jpg')
+                await fsx.copy(delb, './Media/theme/togepic.jpg')
                 fs.unlinkSync(delb)
                 replygcxeon(mess.done)
                 } catch {
@@ -14082,7 +14082,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14155,7 +14155,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14217,7 +14217,7 @@ break
                                 showAdAttribution: true,
                                 title: botname,
                                 body: `Sent in ${i.length} Group`,
-                                thumbnailUrl: 'https://i.ibb.co/Wppj16p/cheemspic.jpg',
+                                thumbnailUrl: 'https://telegra.ph/file/9c5908211362519d4dda1.jpg',
                                 sourceUrl: wagc,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -14265,7 +14265,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14297,7 +14297,7 @@ if (!m.isAdmin && !XeonTheCreator) return XeonStickAdmin()
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14318,7 +14318,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             let [poll, opt] = text.split("|")
             if (text.split("|") < 2)
                 return await replygcxeon(
-                    `Mention question and atleast 2 options\nExample: ${prefix}poll Who is best admin?|Xeon,Cheems,Doge...`
+                    `Mention question and atleast 2 options\nExample: ${prefix}poll Who is best admin?|toge,toge-md,Doge...`
                 )
             try {
             let options = []
@@ -14333,7 +14333,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             })
             } catch {
             	replygcxeon(
-                    `Mention question and atleast 2 options\nExample: ${prefix}poll Who is best admin?|Xeon,Cheems,Doge...`
+                    `Mention question and atleast 2 options\nExample: ${prefix}poll Who is best admin?|toge,toge-md,Doge...`
                 )
                 }
         }
@@ -14362,7 +14362,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14394,7 +14394,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14434,7 +14434,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14466,7 +14466,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14506,7 +14506,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14538,7 +14538,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14578,7 +14578,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14610,7 +14610,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14650,7 +14650,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14682,7 +14682,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14735,7 +14735,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14767,7 +14767,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14808,7 +14808,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14840,7 +14840,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14881,7 +14881,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14913,7 +14913,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -14953,7 +14953,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -14985,7 +14985,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -15025,7 +15025,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -15057,7 +15057,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -15096,7 +15096,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -15128,7 +15128,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -15168,7 +15168,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
             text: botname
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./Media/theme/togepic.jpg')}, { upload: XeonBotInc.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: ownername,
@@ -15200,7 +15200,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -15227,7 +15227,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
                 	let button = [{
 						name: 'single_select',
 						buttonParamsJson: {
-							title: 'SELECT 🌹',
+							title: 'SELECT 🛠️',
 							sections: [{
 								title: 'BOT MODE',
 								rows: [
@@ -15406,7 +15406,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 				if (!m.isAdmin) return XeonStickAdmin()
 				if (!m.isBotAdmin) return XeonStickBotAdmin()
 				if (!text && !m.quoted) {
-					replygcxeon(`EXAMPLE: ${prefix + command} 91xxx`)
+					replygcxeon(`EXAMPLE: ${prefix + command} 241xxx`)
 				} else {
 					const numbersOnly = text ? text.replace(/\D/g, '') + '@s.whatsapp.net' : m.quoted?.sender
 					try {
@@ -15419,7 +15419,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 								if (i.status == 500) return replygcxeon('Group Full!')
 								if (i.status == 403) {
 									await XeonBotInc.sendMessage(m.chat, { text: `@${numbersOnly.split('@')[0]} Cannot Be Added\n\nBecause Target Private\n\nInvitations will be sent to\n-> wa.me/${numbersOnly.replace(/\D/g, '')}\nVia Private Chat`, mentions: [numbersOnly] }, { quoted : m })
-									await XeonBotInc.sendMessage(`${numbersOnly ? numbersOnly : '916909137213@s.whatsapp.net'}`, { text: `${'https://chat.whatsapp.com/' + invv}\n------------------------------------------------------\n\nAdmin: wa.me/${m.sender}\nInvite you to this group\nPlease enter if you wish🙇`, detectLink: true, mentions: [numbersOnly] }, { quoted : floc2 }).catch((err) => replygcxeon('Failed to Send Invitation!'))
+									await XeonBotInc.sendMessage(`${numbersOnly ? numbersOnly : '24102150169@s.whatsapp.net'}`, { text: `${'https://chat.whatsapp.com/' + invv}\n------------------------------------------------------\n\nAdmin: wa.me/${m.sender}\nInvite you to this group\nPlease enter if you wish🙇`, detectLink: true, mentions: [numbersOnly] }, { quoted : floc2 }).catch((err) => replygcxeon('Failed to Send Invitation!'))
 								} else {
 									replygcxeon('Success!!')
 								}
@@ -15436,7 +15436,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 				if (!m.isAdmin) return XeonStickAdmin()
 				if (!m.isBotAdmin) return XeonStickBotAdmin()
 				if (!text && !m.quoted) {
-					replygcxeon(`Example: ${prefix + command} 91xxx`)
+					replygcxeon(`Example: ${prefix + command} 241xxx`)
 				} else {
 					const numbersOnly = text ? text.replace(/\D/g, '') + '@s.whatsapp.net' : m.quoted?.sender
 					await XeonBotInc.groupParticipantsUpdate(m.chat, [numbersOnly], 'remove').catch((err) => replygcxeon('Failed to Kick User!'))
@@ -15448,7 +15448,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 				if (!m.isAdmin) return XeonStickAdmin()
 				if (!m.isBotAdmin) return XeonStickBotAdmin()
 				if (!text && !m.quoted) {
-					replygcxeon(`Example: ${prefix + command} 91xxx`)
+					replygcxeon(`Example: ${prefix + command} 241xxx`)
 				} else {
 					const numbersOnly = text ? text.replace(/\D/g, '') + '@s.whatsapp.net' : m.quoted?.sender
 					await XeonBotInc.groupParticipantsUpdate(m.chat, [numbersOnly], 'promote').catch((err) => replygcxeon('Fail!'))
@@ -15461,7 +15461,7 @@ await XeonBotInc.relayMessage(msg.key.remoteJid, msg.message, {
 				if (!m.isAdmin) return XeonStickAdmin()
 				if (!m.isBotAdmin) return XeonStickBotAdmin()
 				if (!text && !m.quoted) {
-					replygcxeon(`Example: ${prefix + command} 91xxx`)
+					replygcxeon(`Example: ${prefix + command} 241xxx`)
 				} else {
 					const numbersOnly = text ? text.replace(/\D/g, '') + '@s.whatsapp.net' : m.quoted?.sender
 					await XeonBotInc.groupParticipantsUpdate(m.chat, [numbersOnly], 'demote').catch((err) => replygcxeon('Failed!'))
@@ -15678,7 +15678,7 @@ list.push({
                                 showAdAttribution: true,
                                 title: botname,
                                 body: ownername,
-                                thumbnail: fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),
+                                thumbnail: fs.readFileSync('./Media/theme/togepic.jpg'),
                                 sourceUrl: wagc,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -16020,7 +16020,7 @@ if (!/webp/.test(mime)) return replygcxeon('Reply sticker!')
                         //let img = await q.download()
                             let img = await XeonBotInc.downloadAndSaveMediaMessage(quoted, makeid(5))
                                 if (!img) return replygcxeon('Reply a sticker!')
-                                    var stiker = await addExifAvatar(img, `Made by`, `Cheems Bot`)
+                                    var stiker = await addExifAvatar(img, `Made by`, `TOGE-MD`)
                                       } catch (e) {
                                           console.error(e)
                                               if (Buffer.isBuffer(e)) stiker = e
@@ -16364,7 +16364,7 @@ break
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16504,7 +16504,7 @@ let msgs = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16590,7 +16590,7 @@ ${themeemoji} Title: ${result.title}`;
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16630,7 +16630,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -16683,7 +16683,7 @@ break
 			
 			// Fun Menu
 			case 'dice': {
-				let ddsa = [{ url: 'https://telegra.ph/file/9f60e4cdbeb79fc6aff7a.png', no: 1 },{ url: 'https://telegra.ph/file/797f86e444755282374ef.png', no: 2 },{ url: 'https://telegra.ph/file/970d2a7656ada7c579b69.png', no: 3 },{ url: 'https://telegra.ph/file/0470d295e00ebe789fb4d.png', no: 4 },{ url: 'https://telegra.ph/file/a9d7332e7ba1d1d26a2be.png', no: 5 },{ url: 'https://telegra.ph/file/99dcd999991a79f9ba0c0.png', no: 6 }]
+				let ddsa = [{ url: 'https://telegra.ph/file/9c5908211362519d4dda1.jpg', no: 1 },{ url: 'https://telegra.ph/file/9c5908211362519d4dda1.jpg', no: 2 },{ url: 'https://telegra.ph/file/9c5908211362519d4dda1.jpg', no: 3 },{ url: 'https://telegra.ph/file/9c5908211362519d4dda1.jpg', no: 4 },{ url: 'https://telegra.ph/file/9c5908211362519d4dda1.jpg', no: 5 },{ url: 'https://telegra.ph/file/9c5908211362519d4dda1.jpg', no: 6 }]
 				let media = pickRandom(ddsa)
 				await XeonBotInc.sendImageAsSticker(m.chat, media.url, m, { packname: global.packname, author: global.author, isAvatar: 1 })
 			}
