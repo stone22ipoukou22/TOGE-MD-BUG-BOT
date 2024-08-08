@@ -16967,7 +16967,7 @@ if (typemenu === 'v1') {
                     })
       } else if (typemenu === 'v9') {
                 	XeonBotInc.sendMessage(m.chat, {
-video: fs.readFileSync('./XeonMedia/theme/Cheems-bot.mp4'),
+video: fs.readFileSync('./Media/theme/togevid.mp4'),
 caption: xmenu_oh,
 gifPlayback: true,
 contextInfo: {
@@ -16976,7 +16976,7 @@ isForwarded: true,
 mentionedJid: [sender],
 forwardedNewsletterMessageInfo: {
 newsletterName: ownername,
-newsletterJid: "120363222395675670@newsletter",
+newsletterJid: "1203632993333611780@newsletter",
 },
 externalAdReply: {
 showAdAttribution: true,
@@ -17270,7 +17270,7 @@ let msg = generateWAMessageFromContent(m.chat, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
