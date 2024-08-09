@@ -1,13 +1,30 @@
-//base by DGXeon
-//re-upload? recode? copy code? give credit ya :)
-//YouTube: @DGXeon
-//Instagram: unicorn_xeon13
-//Telegram: t.me/xeonbotinc
-//GitHub: @DGXeon
-//WhatsApp: +916909137213
-//want more free bot scripts? 
-//subscribe to my youtube channel: https://youtube.com/@DGXeon
+//------------------------------------------------------------------------------------------------------------------------------
+//                                     TOGE-MD WHATSAPP BOT
+//
+//                                           V.1.2.0
+//
+//                               ▀▀█▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀ 　 ▒█▀▄▀█ ▒█▀▀▄ 
+//                               ░▒█░░ ▒█░░▒█ ▒█░▄▄ ▒█▀▀▀ 　 ▒█▒█▒█ ▒█░▒█ 
+//                               ░▒█░░ ▒█▄▄▄█ ▒█▄▄█ ▒█▄▄▄ 　 ▒█░░▒█ ▒█▄▄▀
+//
+//------------------------------------------------------------------------------------------------------------------------------
 
+/**
+
+* @project_name : TOGE-MD
+* @Developer : TOGE INUMAKI
+* @Version : v.1.2.7
+* @license : APACHE-2.0
+
+THIS PROJECT IS MADE UNDER THE CIRCUMSTANCES OF "APACHE-2.0"
+MEANS ANY KIND OF (MISLEADING, RE-UPLOADING, RENG) WILL LEAD YOU
+TO A DMCA REPORT FROM THE OFFICIAL GITHUB, WHICH RESULT IN 
+REMOVING UR COPIED/RE-UPLOADED PROJECT FROM THERE, IN SOME
+CONDITIONS IT CAN LEADS TO TERMINATE UR ACCOUNT FROM THAT PLATFORM
+
+│• @C_holder : toge12345
+
+**/
 
 require('../settings');
 const fs = require('fs');
@@ -32,7 +49,7 @@ async function GroupUpdate(XeonBotInc, update) {
 				try {
 					profile = await XeonBotInc.profilePictureUrl(n.id, 'image');
 				} catch {
-					profile = 'https://telegra.ph/file/95670d63378f7f4210f03.png';
+					profile = 'https://telegra.ph/file/9c5908211362519d4dda1.jpg';
 				}
 				if (n.announce) {
 					await XeonBotInc.sendMessage(n.id, {
@@ -122,7 +139,7 @@ async function GroupParticipantsUpdate(XeonBotInc, { id, participants, action })
 				try {
 					profile = await XeonBotInc.profilePictureUrl(n, 'image');
 				} catch {
-					profile = 'https://telegra.ph/file/95670d63378f7f4210f03.png';
+					profile = 'https://telegra.ph/file/9c5908211362519d4dda1.jpg';
 				}
 				XeonWlcm = await getBuffer(profile)
                 XeonLft = await getBuffer(profile)
@@ -162,7 +179,7 @@ let msgs = generateWAMessageFromContent(id, {
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [{
             "name": "quick_reply",
-              "buttonParamsJson": `{\"display_text\":\"Welcome 💐\",\"id\":\"\"}`
+              "buttonParamsJson": `{\"display_text\":\"Welcome ✨\",\"id\":\"\"}`
             }],
           }),
           contextInfo: {
@@ -170,7 +187,7 @@ let msgs = generateWAMessageFromContent(id, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -224,7 +241,7 @@ let msgs = generateWAMessageFromContent(id, {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
