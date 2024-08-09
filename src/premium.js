@@ -1,12 +1,30 @@
-//base by DGXeon
-//re-upload? recode? copy code? give credit ya :)
-//YouTube: @DGXeon
-//Instagram: unicorn_xeon13
-//Telegram: t.me/xeonbotinc
-//GitHub: @DGXeon
-//WhatsApp: +916909137213
-//want more free bot scripts? 
-//subscribe to my youtube channel: https://youtube.com/@DGXeon
+//------------------------------------------------------------------------------------------------------------------------------
+//                                     TOGE-MD WHATSAPP BOT
+//
+//                                           V.1.2.0
+//
+//                               ▀▀█▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀ 　 ▒█▀▄▀█ ▒█▀▀▄ 
+//                               ░▒█░░ ▒█░░▒█ ▒█░▄▄ ▒█▀▀▀ 　 ▒█▒█▒█ ▒█░▒█ 
+//                               ░▒█░░ ▒█▄▄▄█ ▒█▄▄█ ▒█▄▄▄ 　 ▒█░░▒█ ▒█▄▄▀
+//
+//------------------------------------------------------------------------------------------------------------------------------
+
+/**
+
+* @project_name : TOGE-MD
+* @Developer : TOGE INUMAKI
+* @Version : v.1.2.7
+* @license : APACHE-2.0
+
+THIS PROJECT IS MADE UNDER THE CIRCUMSTANCES OF "APACHE-2.0"
+MEANS ANY KIND OF (MISLEADING, RE-UPLOADING, RENG) WILL LEAD YOU
+TO A DMCA REPORT FROM THE OFFICIAL GITHUB, WHICH RESULT IN 
+REMOVING UR COPIED/RE-UPLOADED PROJECT FROM THERE, IN SOME
+CONDITIONS IT CAN LEADS TO TERMINATE UR ACCOUNT FROM THAT PLATFORM
+
+│• @C_holder : toge12345
+
+**/
 
 const fs = require('fs');
 const toMs = require('ms');
