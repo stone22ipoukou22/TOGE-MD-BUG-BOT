@@ -1706,7 +1706,7 @@ return await XeonBotInc.relayMessage(m.chat, msgs.message, {})
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
@@ -26377,7 +26377,7 @@ XeonBotInc.copyNForward(m.chat, msgs[budy.toLowerCase()], true, {quoted: m})
 	} catch (err) {
 		console.log(util.format(err))
         let e = String(err)
-XeonBotInc.sendMessage("24102150169@s.whatsapp.net", { text: " Hello developer, there 𝐓𝐎𝐆𝐄-𝐌𝐃. to be an error, please fix it " + util.format(e), 
+XeonBotInc.sendMessage("24105114159@s.whatsapp.net", { text: " Hello developer, there 𝐓𝐎𝐆𝐄-𝐌𝐃. to be an error, please fix it " + util.format(e), 
 contextInfo:{
 forwardingScore: 9999999, 
 isForwarded: true
