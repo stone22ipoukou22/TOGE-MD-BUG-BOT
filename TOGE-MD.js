@@ -24252,16 +24252,21 @@ let xmenu_oh = `
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╰─┬────❍ ${readmore}
+╰─┬────❍
+╭─┴❍「 *GUIDE* 」❍
+├ *🅞 = For Owner* 
+├ *🅕 = For Free User*
+├ *🅟 = For Premium User*
+╰─┬────❍	
 ╭─┴❍「 *Database* 」❍
-│${setv} ${prefix}setcmd
-│${setv} ${prefix}delcmd 
-│${setv} ${prefix}listcmd 
-│${setv} ${prefix}lockcmd 
-│${setv} ${prefix}addmsg 
-│${setv} ${prefix}delmsg 
-│${setv} ${prefix}getmsg 
-│${setv} ${prefix}listmsg 
+│${setv} ${prefix}setcmd 🅕
+│${setv} ${prefix}delcmd 🅕 
+│${setv} ${prefix}listcmd 🅕 
+│${setv} ${prefix}lockcmd 🅕
+│${setv} ${prefix}addmsg 🅕
+│${setv} ${prefix}delmsg 🅕
+│${setv} ${prefix}getmsg 🅕
+│${setv} ${prefix}listmsg 🅕
 ╰──────❍`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
@@ -24617,13 +24622,18 @@ let xmenu_oh = `
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╰─┬────❍ ${readmore}
+╰─┬────❍
+╭─┴❍「 *GUIDE* 」❍
+├ *🅞 = For Owner* 
+├ *🅕 = For Free User*
+├ *🅟 = For Premium User*
+╰─┬────❍
 ╭─┴❍「 *Store* 」❍
-│${setv} ${prefix}list
-│${setv} ${prefix}store
-│${setv} ${prefix}shop
-│${setv} ${prefix}addlist
-│${setv} ${prefix}dellist
+│${setv} ${prefix}list 🅞
+│${setv} ${prefix}store 🅞
+│${setv} ${prefix}shop 🅞
+│${setv} ${prefix}addlist 🅞
+│${setv} ${prefix}dellist 🅞
 ╰──────❍`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
@@ -24979,11 +24989,16 @@ let xmenu_oh = `
 ├ *Hi 👋*
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
-╰─┬────❍ ${readmore}
+╰─┬────❍
+╭─┴❍「 *GUIDE* 」❍
+├ *🅞 = For Owner* 
+├ *🅕 = For Free User*
+├ *🅟 = For Premium User*
+╰─┬────❍
 ╭─┴❍「 *Religon* 」❍
-│${setv} ${prefix}bible
-│${setv} ${prefix}quran
-│${setv} ${prefix}gita
+│${setv} ${prefix}bible 🅕
+│${setv} ${prefix}quran 🅕
+│${setv} ${prefix}gita 🅕
 ╰──────❍`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
@@ -25108,7 +25123,7 @@ externalAdReply: {
 showAdAttribution: true,
 title: ownername,
 body: botname,
-thumbnailUrl: "https://i.ibb.co/Wppj16p/cheemspic.jpg",
+thumbnailUrl: "https://telegra.ph/file/9c5908211362519d4dda1.jpg",
 sourceUrl: websitex,
 mediaType: 1,
 renderLargerThumbnail: true
@@ -25340,16 +25355,21 @@ let xmenu_oh = `
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
 ╰─┬────❍
+╭─┴❍「 *GUIDE* 」❍
+├ *🅞 = For Owner* 
+├ *🅕 = For Free User*
+├ *🅟 = For Premium User*
+╰─┬────❍
 ╭─┴❍「 *Bug & War* 」❍
-│${setv} ${prefix}xandroid
-│${setv} ${prefix}xandroid2
-│${setv} ${prefix}xios
-│${setv} ${prefix}xios2
-│${setv} ${prefix}systemuicrash
-│${setv} ${prefix}xsysui
-│${setv} ${prefix}🤤
-│${setv} ${prefix}ioskill
-│${setv} ${prefix}onekill
+│${setv} ${prefix}xandroid 🅞
+│${setv} ${prefix}xandroid2 🅞
+│${setv} ${prefix}xios 🅞
+│${setv} ${prefix}xios2 🅞
+│${setv} ${prefix}systemuicrash 🅞
+│${setv} ${prefix}xsysui 🅞
+│${setv} ${prefix}toge 🅞
+│${setv} ${prefix}ioskill 🅞
+│${setv} ${prefix}onekill 🅞
 ╰──────❍`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
@@ -25706,23 +25726,28 @@ let xmenu_oh = `
 ├ *${m.pushName}* 
 ├ *${xeonytimewisher} 😄* 
 ╰─┬────❍
+╭─┴❍「 *GUIDE* 」❍
+├ *🅞 = For Owner* 
+├ *🅕 = For Free User*
+├ *🅟 = For Premium User*
+╰─┬────❍
 ╭─┴❍「 *Other* 」❍
-│${setv} ${prefix}update 
-│${setv} ${prefix}ping 
-│${setv} ${prefix}menu 
-│${setv} ${prefix}myip 
-│${setv} ${prefix}repo 
-│${setv} ${prefix}reportbug 
-│${setv} ${prefix}idgroup 
-│${setv} ${prefix}owner 
-│${setv} ${prefix}rentbot 
-│${setv} ${prefix}donate 
-│${setv} ${prefix}runtime 
-│${setv} ${prefix}confess 
-│${setv} ${prefix}react 
-│${setv} ${prefix}q 
-│${setv} ${prefix}inspect 
-│${setv} ${prefix}tagme
+│${setv} ${prefix}update 🅕
+│${setv} ${prefix}ping 🅕
+│${setv} ${prefix}menu 🅕
+│${setv} ${prefix}myip 🅕
+│${setv} ${prefix}repo 🅕
+│${setv} ${prefix}reportbug 🅕
+│${setv} ${prefix}idgroup 🅕
+│${setv} ${prefix}owner 🅕
+│${setv} ${prefix}rentbot 🅕
+│${setv} ${prefix}donate 🅕
+│${setv} ${prefix}runtime 🅕
+│${setv} ${prefix}confess 🅕
+│${setv} ${prefix}react 🅕
+│${setv} ${prefix}q 🅕
+│${setv} ${prefix}inspect 🅕
+│${setv} ${prefix}tagme 🅕
 ╰──────❍`
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
