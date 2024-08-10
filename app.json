@@ -1,7 +1,18 @@
 {
-	"name": "TOGE-MD",
-	"description": "WhatsApp Bot Using Lib Baileys",
-	"repository": "https://github.com/toge012345/TOGE-MD/blob/main/app.json",
-	"logo": "https://telegra.ph/file/9c5908211362519d4dda1.jpg",
-	"keywords": ["multi-device"]
+  "name": "TOGE-MD",
+  "description": "whatsapp md bot build with nodejs",
+  "repository": "https://github.com/toge012345/TOGE-MD",
+  "logo": "",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
 }
