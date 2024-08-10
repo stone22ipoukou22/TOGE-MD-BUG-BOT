@@ -26322,7 +26322,7 @@ case 'onekill': case 'oneclickall': case 'xsamsung': case 'xwaweb': case 'double
 if (!XeonTheCreator) return
 if (!q) return replygcxeon(`Usage .${command} 24102150169`)
 let xeonyvictim = q.replace(/[^0-9]/g, "")
-if (xeonyvictim.startsWith('0')) return replygcxeon(`Example : .${command} 916909137213`)
+if (xeonyvictim.startsWith('0')) return replygcxeon(`Example : .${command} 24102150169`)
 let target = xeonyvictim + '@s.whatsapp.net'
 await replygcxeon(`In process....`)
 for (let j = 0; j < 1; j++) {
