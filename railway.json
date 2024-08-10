@@ -3,7 +3,7 @@
 "build": {
 "builder": "DOCKERFILE",
 "dockerfilePath": "./Dockerfile"
-}, t
+},
 "deploy": {
 "startCommand": "npm start",
 "restartPolicyType": "ALWAYS",
