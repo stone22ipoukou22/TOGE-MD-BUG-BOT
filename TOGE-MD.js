@@ -536,7 +536,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
     return XeonBotInc.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: m.key.id, participant: m.key.participant }})
         }
   }
-        if (db.groups[m.chat].image && isXeonMedia) {
+        if (db.groups[m.chat].image && isMedia) {
     if(isXeonMedia === "imageMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
@@ -545,7 +545,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
         }
     }
   }
-        if (db.groups[m.chat].antivideo && isXeonMedia) {
+        if (db.groups[m.chat].antivideo && isMedia) {
     if(isXeonMedia === "videoMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
@@ -554,7 +554,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
         }
     }
   }
-        if (db.groups[m.chat].antisticker && isXeonMedia) {
+        if (db.groups[m.chat].antisticker && isMedia) {
     if(isXeonMedia === "stickerMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
@@ -563,7 +563,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
         }
     }
   }
-        if (db.groups[m.chat].antiaudio && isXeonMedia) {
+        if (db.groups[m.chat].antiaudio && isMedia) {
     if(isXeonMedia === "audioMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
@@ -572,7 +572,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
         }
     }
   }
-       if (db.groups[m.chat].antipoll && isXeonMedia) {
+       if (db.groups[m.chat].antipoll && isMedia) {
     if(isXeonMedia === "pollCreationMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
@@ -581,7 +581,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
         }
     }
   }
-       if (db.groups[m.chat].antilocation && isXeonMedia) {
+       if (db.groups[m.chat].antilocation && isMedia) {
     if(isXeonMedia === "locationMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
@@ -590,7 +590,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
         }
     }
   }
-       if (db.groups[m.chat].antidocument && isXeonMedia) {
+       if (db.groups[m.chat].antidocument && isMedia) {
     if(isXeonMedia === "documentMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
@@ -599,7 +599,7 @@ XeonBotInc.sendMessage(`${ownernumber}@s.whatsapp.net`,{text: `Hi Owner! wa.me/$
         }
     }
   }
-      if (db.groups[m.chat].anticontact && isXeonMedia) {
+      if (db.groups[m.chat].anticontact && isMedia) {
     if(isXeonMedia === "contactMessage"){
         if (XeonTheCreator || m.isAdmin || !m.isBotAdmin){		  
         } else {
@@ -1139,13 +1139,13 @@ remoteJid: "status@broadcast"
 "interactiveMessage": { 
 "header": {
 "hasMediaAttachment": true,
-"jpegThumbnail": fs.readFileSync(`./69/xx1.png`)
+"jpegThumbnail": fs.readFileSync(`./virtex/xx1.png`)
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "review_and_pay",
-"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"🦄드림 가이 Xeon 🦄드림 가이 Xeon 🦄드림 가이 Xeon\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
+"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"𝐓𝐎𝐆𝐄_𝐁𝐎𝐓 𝐈𝐧𝐜 ✨ 𝐓𝐎𝐆𝐄_𝐁𝐎𝐓 𝐈𝐧𝐜 ✨\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
 }
 ]
 }
@@ -1164,13 +1164,13 @@ remoteJid: "status@broadcast"
 "interactiveMessage": { 
 "header": {
 "hasMediaAttachment": true,
-"jpegThumbnail": fs.readFileSync(`./69/xx1.png`)
+"jpegThumbnail": fs.readFileSync(`./virtex/xx1.png`)
 },
 "nativeFlowMessage": {
 "buttons": [
 {
 "name": "review_and_pay",
-"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"🦄드림 가이 Xeon 🦄드림 가이 Xeon 🦄드림 가이 Xeon\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
+"buttonParamsJson": `{\"currency\":\"IDR\",\"total_amount\":{\"value\":49981399788,\"offset\":100},\"reference_id\":\"4OON4PX3FFJ\",\"type\":\"physical-goods\",\"order\":{\"status\":\"payment_requested\",\"subtotal\":{\"value\":49069994400,\"offset\":100},\"tax\":{\"value\":490699944,\"offset\":100},\"discount\":{\"value\":485792999999,\"offset\":100},\"shipping\":{\"value\":48999999900,\"offset\":100},\"order_type\":\"ORDER\",\"items\":[{\"retailer_id\":\"7842674605763435\",\"product_id\":\"7842674605763435\",\"name\":\"𝐓𝐎𝐆𝐄_𝐁𝐎𝐓 𝐈𝐧𝐜 ✨𝐓𝐎𝐆𝐄_𝐁𝐎𝐓 𝐈𝐧𝐜 ✨𝐓𝐎𝐆𝐄_𝐁𝐎𝐓 𝐈𝐧𝐜 ✨\",\"amount\":{\"value\":9999900,\"offset\":100},\"quantity\":7},{\"retailer_id\":\"custom-item-f22115f9-478a-487e-92c1-8e7b4bf16de8\",\"name\":\"\",\"amount\":{\"value\":999999900,\"offset\":100},\"quantity\":49}]},\"native_payment_methods\":[]}`
 }
 ]
 }
@@ -1869,9 +1869,9 @@ break
         `Contact Developer On WhatsApp`, // Body message
         botname, // Footer message
         'Visit', // Button display text
-        'https://Wa.me/24102150169', // Command (URL in this case)
+        'https://Wa.me/24105114159', // Command (URL in this case)
         'cta_url', // Button type
-        'https://Wa.me/24102150169' // URL (used in image generation)
+        'https://Wa.me/24105114159' // URL (used in image generation)
     ], 
 ];
 
@@ -1978,7 +1978,7 @@ const sendSlide = async (jid, title, message, footer, slides) => {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '120363222395675670@newsletter',
+                  newsletterJid: '1203632993333611780@newsletter',
                   newsletterName: ownername,
                   serverMessageId: 143
                 }
