@@ -1,35 +1,58 @@
-//base by DGXeon
-//re-upload? recode? copy code? give credit ya :)
-//YouTube: @DGXeon
-//Instagram: unicorn_xeon13
-//Telegram: t.me/xeonbotinc
-//GitHub: @DGXeon
-//WhatsApp: +916909137213
-//want more free bot scripts? 
-//subscribe to my youtube channel: https://youtube.com/@DGXeon
+//------------------------------------------------------------------------------------------------------------------------------
+//                                     TOGE-MD WHATSAPP BOT
+//
+//                                           V.1.2.0
+//
+//                               ▀▀█▀▀ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▀ 　 ▒█▀▄▀█ ▒█▀▀▄ 
+//                               ░▒█░░ ▒█░░▒█ ▒█░▄▄ ▒█▀▀▀ 　 ▒█▒█▒█ ▒█░▒█ 
+//                               ░▒█░░ ▒█▄▄▄█ ▒█▄▄█ ▒█▄▄▄ 　 ▒█░░▒█ ▒█▄▄▀
+//
+//------------------------------------------------------------------------------------------------------------------------------
+
+/**
+
+* @project_name : TOGE-MD
+* @Developer : TOGE INUMAKI
+* @Version : v.1.2.7
+* @license : APACHE-2.0
+
+THIS PROJECT IS MADE UNDER THE CIRCUMSTANCES OF "APACHE-2.0"
+MEANS ANY KIND OF (MISLEADING, RE-UPLOADING, RENG) WILL LEAD YOU
+TO A DMCA REPORT FROM THE OFFICIAL GITHUB, WHICH RESULT IN 
+REMOVING UR COPIED/RE-UPLOADED PROJECT FROM THERE, IN SOME
+CONDITIONS IT CAN LEADS TO TERMINATE UR ACCOUNT FROM THAT PLATFORM
+
+│• @C_holder : toge12345
+
+**/
 
 const fs = require('fs');
 const chalk = require('chalk');
 
 //owmner v card
-global.ytname = "YT: Xeon" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.ytname = "YT: kenzo3146" //ur yt chanel name
+global.socialm = "GitHub: toge012345" //ur github or insta name
+global.location = "Africa, Gabon, Libreville" //ur location
 
 //new
-global.botname = 'Cheems Bot MD V15' //ur bot name
-global.ownernumber = ['916909137213'] //ur owner number, dont add more than one
-global.ownername = '🦄드림 가이 Xeon' //ur owner name
-global.websitex = "https://youtu.be/Ljt4MaHq1LM"
-global.wagc = "https://whatsapp.com/channel/0029VaG9VfPKWEKk1rxTQD20"
-global.themeemoji = '🪀'
-global.wm = "Xeon Bot Inc."
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD13' //script link
+global.botname = '𝐓𝐎𝐆𝐄-𝐌𝐃' //ur bot name
+global.ownernumber = ['24102150169'] //ur owner number, dont add more than one
+global.ownername = '𓆩𝐓𝐎𝐆𝐄𓆪 ✇ ◤✞𝐈𝐍𝐔𝐌𝐀𝐊𝐈' //ur owner name
+global.websitex = "https://toge-md-web.onrender.com"
+global.wagc = "https://whatsapp.com/channel/0029VaiuD4s4IBhI0fzbv40Z"
+global.themeemoji = '🛠️'
+global.wm = "𝐓𝐎𝐆𝐄_𝐁𝐎𝐓 𝐈𝐧𝐜 ✨"
+global.botscript = 'https://github.com/toge012345/TOGE-MD' //script link
 global.packname = "Sticker By"
-global.author = "🦄드림 가이 Xeon\n\n+916909137213"
-global.creator = "916909137213@s.whatsapp.net"
+global.author = "𓆩𝐓𝐎𝐆𝐄𓆪 ✇ ◤✞𝐈𝐍𝐔𝐌𝐀𝐊𝐈"
+global.creator = "24102150169@s.whatsapp.net"
 global.xprefix = '.'
-global.premium = ["916909137213"] // Premium User
+global.premium = ["24105114159"] // Premium User
+
+//channel id
+global.xchannel = {
+	jid: '1203632993333611780@newsletter'
+	}
 
 //bot sett
 global.typemenu = 'v12' // menu type 'v1' => 'v12'
@@ -70,6 +93,8 @@ global.game = {
 	kuismath: {},
 	tebakbom: {},
 }
+
+//~~~~~~~~~~~~~~~< PROCESS >~~~~~~~~~~~~~~~\\
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
