@@ -1,12 +1,12 @@
-**BUG-BOT MULTI DEVICE WHATSAPP BOT**
+**MULTI DEVICE WHATSAPP BOT**
   </p>
 <p align="center">
   <a href="https://chat.whatsapp.com/JQ4s2pJuBReE7YL9wKJPHo">
-    <img alt=Support height="550" src="https://graph.org/file/dca3670b656918fe9e34d.jpg"
+    <img alt=Support height="550" src="https://telegra.ph/file/a192809b60ec7e7aa0f1e.jpg"
     <p align="center">
   <a href="#"><img src="http://readme-typing-svg.herokuapp.com?color=ff00ab&center=true&vCenter=true&multiline=false&lines=BASE+BY+DGXEON." alt="">
 </p>
-<h1 align="center"> 𝗧𝗢𝗚𝗘-𝗕𝗨𝗚-𝗠𝗗 </h1>
+<h1 align="center"> 𝗧𝗢𝗚𝗘-𝗠𝗗 </h1>
 </h1>
 <p align="center"> 𝐇𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐛𝐨𝐧𝐝 𝐨𝐟 𝐭𝐡𝐞 𝐬𝐮𝐩𝐩𝐨𝐫𝐭 👇
 <p align="center"> 
@@ -18,8 +18,8 @@
 ### **ALERTE ⚠️**
 please add the cred.json file to the session folder
 
- ### ℹ️ **ABOUT 𝗧𝗢𝗚𝗘-𝗕𝗨𝗚-𝗠𝗗**
- Introducing 𝗧𝗢𝗚𝗘-𝗕𝗨𝗚-𝗠𝗗, It is designed to bring a whole new level of excitement to your boring WhatsApp use.hope it might be helpful to all loosen hope we feel delightful to save you release your feedback and share our chuddy buddy </p>
+ ### ℹ️ **ABOUT 𝗧𝗢𝗚𝗘-𝗠𝗗**
+ Introducing 𝗧𝗢𝗚𝗘-𝗠𝗗, It is designed to bring a whole new level of excitement to your boring WhatsApp use.hope it might be helpful to all loosen hope we feel delightful to save you release your feedback and share our chuddy buddy </p>
 
 
 `🕯ＦＥＡＴＵＲＥＳ🕯`
@@ -36,21 +36,16 @@ please add the cred.json file to the session folder
 
 
 1. ***Star⭐ The Repository Must***
-2. ***Click [FORK](https://github.com/toge012345/BUG-TOGE-MD/fork)***
+2. ***Click [FORK](https://github.com/toge012345/TOGE-MD/fork)***
 3. ***[PAIR-CODE](https://toge-md-web.onrender.com) `Whatapp>Three dots>Linked devices>connect with phone number`***
     <br>
     
 5. ***[QR-CODE](https://gpt-qr-code.onrender.com) `Whatapp>Three dots>Linked Devices`***
     <br>
   
-***[𝗔𝗨𝗧𝗛𝗢𝗥 𝗢𝗙 𝗤𝗥 𝗖𝗢𝗗𝗘](https://github.com/DarkMakerofc)***
-  
 
-<details close>
-<summary>𝗖𝗟𝗜𝗖𝗞 𝗧𝗢 𝗖𝗛𝗢𝗢𝗦𝗘 𝗬𝗢𝗨𝗥 𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠</summary>
+### 𝗖𝗟𝗜𝗖𝗞 𝗧𝗢 𝗖𝗛𝗢𝗢𝗦𝗘 𝗬𝗢𝗨𝗥 𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗣𝗟𝗔𝗧𝗙𝗢𝗥𝗠
  
-<br>  
-
 
 ### `DEPLOY TO REPLIT`
 
@@ -60,7 +55,7 @@ please add the cred.json file to the session folder
 
 2. Now Deploy
     <br>
-    <a href='https://repl.it/github/toge012345/BUG-TOGE-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
+    <a href='https://repl.it/github/toge012345/TOGE-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
 
 ### DEPLOY TO CODESPACE
 
@@ -80,7 +75,7 @@ please add the cred.json file to the session folder
 
 2. Now Deploy
     <br>
-<a href='https://dashboard.heroku.com/new?template=https://github.com/toge012345/TOGE-BUG-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
+<a href='https://dashboard.heroku.com/new?template=https://github.com/toge012345/TOGE-MD' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/></a>
 
 #### DEPLOY TO RAILWAY
 
@@ -133,7 +128,7 @@ pkg install yarn
 git clone (copy and paste your forked repo link not mine to save changes your changes) 
 ```
 ```
-cd BUG-TOGE-MD
+cd TOGE-MD
 ```
 ```
 yarn install
@@ -176,9 +171,9 @@ npm i -g forever && forever index.js && forever save && forever logs
 ## ```Connect With Me```<img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/handshake.gif" width ="80"></h1> 
 
 ##
-- ***Star ⭐ My Repo If You Like BUG BOT.***
-- ***The [BUG-TOGE-MD](https://github.com/toge012345/BUG-TOGE-MD) is Made Under The [Apache-2.0 license](https://github.com/toge012345/BUG-TOGE-MD/blob/main/LICENSE).***
-- ***[Apache-2.0 license](https://github.com/toge012345/BUG-TOGE-MD/blob/main/LICENSE) Means Copying, Re-Uploading, Reverse-Engineering Is Illegal And Not Allowed.***
+- ***Star ⭐ My Repo If You Like TOGE-MD.***
+- ***The [TOGE-MD](https://github.com/toge012345/BUG-TOGE-MD) is Made Under The [Apache-2.0 license](https://github.com/toge012345/TOGE-MD/blob/main/LICENSE).***
+- ***[Apache-2.0 license](https://github.com/toge012345/TOGE-MD/blob/main/LICENSE) Means Copying, Re-Uploading, Reverse-Engineering Is Illegal And Not Allowed.***
 ##
 
 ### `𝘚𝘱𝘦𝘤𝘪𝘢𝘭 𝘛𝘩𝘢𝘯𝘬𝘴 𝘛𝘰`
