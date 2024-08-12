@@ -1,42 +1,20 @@
-#!/bin/bash
+const path = require('path');
+const { spawn } = require('child_process');
 
-# Function to detect the hosting platform
-detect_platform() {
-  if [[ "$(uname)" == "Linux" ]]; then
-    echo "Linux"
-  elif [[ "$(uname)" == "Darwin" ]]; then
-    echo "macOS"
- elif [[ "$(uname)" == "replit" ]]; then
-    echo "replit"
- elif [ ! -z "$REPLIT" ]; then
-    echo "Replit"
-  else
-    echo "Unknown"
-  fi
+function start() {
+	let args = [path.join(__dirname, 'index.js'), ...process.argv.slice(2)]
+	let p = spawn(process.argv[0], args, {
+		stdio: ['inherit', 'inherit', 'inherit', 'ipc']
+	}).on('message', data => {
+		if (data == 'reset') {
+			console.log('Restarting Bot...')
+			p.kill()
+			start()
+			delete p
+		}
+	}).on('exit', code => {
+		console.error('Exited with code:', code)
+		if (code == '.' || code == 1 || code == 0) start()
+	})
 }
-
-# Get the platform
-platform=$(detect_platform)
-
-# Run different code based on the platform
-case $platform in
-  "Linux")
-    echo " Linux OS Platform Detected"
-    yarn install && yarn start
-    ;;
-  "macOS")
-    echo "Mac OS Platform Detected"
-    yarn install && yarn start
-    ;;
-  "replit")
-    echo "Replit Platform Detected"
-    yarn && yarn start 
-    ;;
-"Replit")
-    echo "Replit Platform Detected"
-    yarn install && yarn start 
-    ;;
-  "Unknown")
-    echo "Unsupported platform"
-    ;;
-esac
+start()
