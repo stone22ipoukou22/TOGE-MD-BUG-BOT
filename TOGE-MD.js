@@ -1,13 +1,3 @@
-//base by DGXeon
-//re-upload? recode? copy code? give credit ya :)
-//YouTube: @DGXeon
-//Instagram: unicorn_xeon13
-//Telegram: t.me/xeonbotinc
-//GitHub: @DGXeon
-//WhatsApp: +916909137213
-//want more free bot scripts? 
-//subscribe to my youtube channel: https://youtube.com/@DGXeon
-
 process.on('unhandledRejection', console.error)
 process.on('uncaughtException', console.error)
 require('./settings');
@@ -51,19 +41,19 @@ let ntnsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 let bad = JSON.parse(fs.readFileSync('./src/badword.json'))
 
 //bug database
-const { xeontext1 } = require('./69/xeontext1')
-const { xeontext2 } = require('./69/xeontext2')
-const { xeontext3 } = require('./69/xeontext3')
-const { xeontext4 } = require('./69/xeontext4')
-const { xeontext5 } = require('./69/xeontext5')
-const { xeontext6 } = require('./69/xeontext6')
-const { xeontext7 } = require('./69/xeontext7')
-const { xeontext8 } = require('./69/xeontext8')
-const { xeontext9 } = require('./69/xeontext9')
-const { xeontext10 } = require('./69/xeontext10')
-const wkwk = fs.readFileSync(`./69/x.mp3`)
-const xsteek = fs.readFileSync(`./69/x.webp`)
-const o = fs.readFileSync(`./69/o.jpg`)
+const { xeontext1 } = require('./virtex/xeontext1')
+const { xeontext2 } = require('./virtex/xeontext2')
+const { xeontext3 } = require('./virtex/xeontext3')
+const { xeontext4 } = require('./virtex/xeontext4')
+const { xeontext5 } = require('./virtex/xeontext5')
+const { xeontext6 } = require('./virtex/xeontext6')
+const { xeontext7 } = require('./virtex/xeontext7')
+const { xeontext8 } = require('./virtex/xeontext8')
+const { xeontext9 } = require('./virtex/xeontext9')
+const { xeontext10 } = require('./virtex/xeontext10')
+const wkwk = fs.readFileSync(`./virtex/x.mp3`)
+const xsteek = fs.readFileSync(`./virtex/x.webp`)
+const o = fs.readFileSync(`./virtex/o.jpg`)
 
 //media
 const VoiceNoteXeon = JSON.parse(fs.readFileSync('./XeonMedia/database/xeonvn.json'));
